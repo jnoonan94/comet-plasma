@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structsimu__fields" kind="struct" language="C++" prot="public">
+    <compoundname>simu_fields</compoundname>
+    <includes refid="structures_8h" local="no">structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::E[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>E</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="91" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::density[len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>density</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="92" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1ab9692f009a9e58d869528dc54a6744a6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::density_b[len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>density_b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="93" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1ae40973db0882ab5f06bdbda5379599f0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::counts[len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>counts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="94" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a71e74ff39d8f0b4272c0a1902f531ce4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::counts_pla[len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>counts_pla</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="95" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a9fef3544ef49ca9d87f4d365583d8aae" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::Lambda[len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>Lambda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="96" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a24e1d3ac7ace7bceffbc5d038795d5d1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::Ji[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>Ji</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="97" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1ab4e9e977bf961f3768d253c485f5cea6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::Ji_b[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>Ji_b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="98" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::fluxNum[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>fluxNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="99" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a8f09464f6c7cb6ee23c1fec40dad2a2e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::fluxNum_pla[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>fluxNum_pla</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="100" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1aa58f6edd6149f1f3ab34bd33e07a2b11" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::Gamma[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>Gamma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="101" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1ad345a079684673e938623872fe7ca941" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::J_tot[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>J_tot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="102" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a039b2df457759e1b57667ab2f2c34cfc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::pres[len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>pres</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="103" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a7e363d6c6512286179202bfe737b8efc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::vort[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>vort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="105" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a32a200398a90609b21e1fa164bd84ed5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::E_mot[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>E_mot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="107" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1ad15962d93bd1fd438e2a88cb8f3ae53c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::E_hal[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>E_hal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="108" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a392ed8f348bf6cbccc9aaf9f85d5f853" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::E_amb[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>E_amb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="109" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1afc4153a06c77957925145144b5380ff9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::E_res[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>E_res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="110" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a2e4bfab1b26d56699f614261b95b8554" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::smooth[len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>smooth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="112" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a73490d50eeedbf3ca22ce0bbb7b88c35" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::buff_send_1d[4 *(len_x_cst+4) *(len_z_cst+4)]</definition>
+        <argsstring>[4 *(len_x_cst+4) *(len_z_cst+4)]</argsstring>
+        <name>buff_send_1d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="114" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__fields_1a12b66e7b31a8601c9262ed9bed1ddd87" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_fields::buff_reci_1d[4 *(len_x_cst+4) *(len_z_cst+4)]</definition>
+        <argsstring>[4 *(len_x_cst+4) *(len_z_cst+4)]</argsstring>
+        <name>buff_reci_1d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="115" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="62" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="62" bodyend="117"/>
+    <listofallmembers>
+      <member refid="structsimu__fields_1a12b66e7b31a8601c9262ed9bed1ddd87" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>buff_reci_1d</name></member>
+      <member refid="structsimu__fields_1a73490d50eeedbf3ca22ce0bbb7b88c35" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>buff_send_1d</name></member>
+      <member refid="structsimu__fields_1ae40973db0882ab5f06bdbda5379599f0" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>counts</name></member>
+      <member refid="structsimu__fields_1a71e74ff39d8f0b4272c0a1902f531ce4" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>counts_pla</name></member>
+      <member refid="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>density</name></member>
+      <member refid="structsimu__fields_1ab9692f009a9e58d869528dc54a6744a6" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>density_b</name></member>
+      <member refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>E</name></member>
+      <member refid="structsimu__fields_1a392ed8f348bf6cbccc9aaf9f85d5f853" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>E_amb</name></member>
+      <member refid="structsimu__fields_1ad15962d93bd1fd438e2a88cb8f3ae53c" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>E_hal</name></member>
+      <member refid="structsimu__fields_1a32a200398a90609b21e1fa164bd84ed5" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>E_mot</name></member>
+      <member refid="structsimu__fields_1afc4153a06c77957925145144b5380ff9" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>E_res</name></member>
+      <member refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>fluxNum</name></member>
+      <member refid="structsimu__fields_1a8f09464f6c7cb6ee23c1fec40dad2a2e" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>fluxNum_pla</name></member>
+      <member refid="structsimu__fields_1aa58f6edd6149f1f3ab34bd33e07a2b11" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>Gamma</name></member>
+      <member refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>J_tot</name></member>
+      <member refid="structsimu__fields_1a24e1d3ac7ace7bceffbc5d038795d5d1" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>Ji</name></member>
+      <member refid="structsimu__fields_1ab4e9e977bf961f3768d253c485f5cea6" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>Ji_b</name></member>
+      <member refid="structsimu__fields_1a9fef3544ef49ca9d87f4d365583d8aae" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>Lambda</name></member>
+      <member refid="structsimu__fields_1a039b2df457759e1b57667ab2f2c34cfc" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>pres</name></member>
+      <member refid="structsimu__fields_1a2e4bfab1b26d56699f614261b95b8554" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>smooth</name></member>
+      <member refid="structsimu__fields_1a7e363d6c6512286179202bfe737b8efc" prot="public" virt="non-virtual"><scope>simu_fields</scope><name>vort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="utils_8h" kind="file" language="C++">
+    <compoundname>utils.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">cuda.h</includes>
+    <includes local="no">cuda_runtime.h</includes>
+    <includes local="yes">mpi.h</includes>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">sys/stat.h</includes>
+    <includedby refid="menura_8cu" local="yes">/home/etienneb/Models/Menura/menura/src/menura.cu</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="6">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="8">
+        <label>sys/types.h</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>cuda.h</label>
+      </node>
+      <node id="7">
+        <label>mpi.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="1">
+        <label>/home/etienneb/Models/Menura/menura/src/utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/etienneb/Models/Menura/menura/src/menura.cu</label>
+        <link refid="menura_8cu"/>
+      </node>
+      <node id="1">
+        <label>/home/etienneb/Models/Menura/menura/src/utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="utils_8h_1aa603a1f8d06f5ba87c0e78775c6b2631" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pre_checks</definition>
+        <argsstring>()</argsstring>
+        <name>pre_checks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/utils.h" line="15" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/utils.h" bodystart="15" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8h_1af07ad6d256431e169587320815970782" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initialisation_cuda</definition>
+        <argsstring>()</argsstring>
+        <name>initialisation_cuda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/utils.h" line="61" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/utils.h" bodystart="61" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8h_1a3f26e3374514ef22d46cd9323a5c851a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void debug_leo</definition>
+        <argsstring>(int idx_it, int ind_it_save, int str_ind_save, bool exit_leo, particles *pa_h, particles *pa_d, simu_fields *fields_h, simu_fields *fields_d, simu_B_field *B_h, simu_B_field *B_d, simu_param *simu_param_h, house_keeping *HK_h, trajectory *traj_h, trajectory *traj_d, moments *mom_h, moments *mom_d, root_mean_sqr *rms_h, root_mean_sqr *rms_d)</argsstring>
+        <name>debug_leo</name>
+        <param>
+          <type>int</type>
+          <declname>idx_it</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ind_it_save</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>str_ind_save</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exit_leo</declname>
+        </param>
+        <param>
+          <type><ref refid="structparticles" kindref="compound">particles</ref> *</type>
+          <declname>pa_h</declname>
+        </param>
+        <param>
+          <type><ref refid="structparticles" kindref="compound">particles</ref> *</type>
+          <declname>pa_d</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__fields" kindref="compound">simu_fields</ref> *</type>
+          <declname>fields_h</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__fields" kindref="compound">simu_fields</ref> *</type>
+          <declname>fields_d</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref> *</type>
+          <declname>B_h</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref> *</type>
+          <declname>B_d</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>simu_param_h</declname>
+        </param>
+        <param>
+          <type><ref refid="structhouse__keeping" kindref="compound">house_keeping</ref> *</type>
+          <declname>HK_h</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrajectory" kindref="compound">trajectory</ref> *</type>
+          <declname>traj_h</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrajectory" kindref="compound">trajectory</ref> *</type>
+          <declname>traj_d</declname>
+        </param>
+        <param>
+          <type><ref refid="structmoments" kindref="compound">moments</ref> *</type>
+          <declname>mom_h</declname>
+        </param>
+        <param>
+          <type><ref refid="structmoments" kindref="compound">moments</ref> *</type>
+          <declname>mom_d</declname>
+        </param>
+        <param>
+          <type><ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref> *</type>
+          <declname>rms_h</declname>
+        </param>
+        <param>
+          <type><ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref> *</type>
+          <declname>rms_d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/utils.h" line="102" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/utils.h" bodystart="102" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8h_1adfa9161ce44078bfcedc94bac70d688f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void check_state</definition>
+        <argsstring>(state_solver *sta_sol, simu_param *s_p, int error_ID=0, cudaError_t err=cudaSuccess)</argsstring>
+        <name>check_state</name>
+        <param>
+          <type><ref refid="structstate__solver" kindref="compound">state_solver</ref> *</type>
+          <declname>sta_sol</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>s_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>error_ID</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>cudaError_t</type>
+          <declname>err</declname>
+          <defval>cudaSuccess</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/utils.h" line="131" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/utils.h" bodystart="131" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8h_1ab95e213ad28dfcc577fc05838fdad54f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void check_memory_device</definition>
+        <argsstring>(int rank, int tag)</argsstring>
+        <name>check_memory_device</name>
+        <param>
+          <type>int</type>
+          <declname>rank</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/utils.h" line="145" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/utils.h" bodystart="145" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8h_1a73344231681880ab13c2495a89962d98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sortie</definition>
+        <argsstring>()</argsstring>
+        <name>sortie</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/utils.h" line="182" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/utils.h" bodystart="182" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cuda.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cuda_runtime.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mpi.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="utils_8h_1aa603a1f8d06f5ba87c0e78775c6b2631" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="utils_8h_1aa603a1f8d06f5ba87c0e78775c6b2631" kindref="member">pre_checks</ref>(){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">stat<sp/>info<sp/>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pathname<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;./products/HK&quot;</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pass_checks<sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;._____________________________________________________________________________________\n|\n|<sp/>Initial<sp/>checks.<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>stat(<sp/>pathname,<sp/>&amp;info<sp/>)<sp/>!=<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><sp/></highlight><highlight class="stringliteral">&quot;|\n|<sp/>Cannot<sp/>access<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>pathname<sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>pass_checks<sp/>=<sp/>false<sp/>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="parameters_8h_1ab5d386ba33baf19b07e1008a79c132d2" kindref="member">nb_cell_per_shift_cst</ref>&gt;=<ref refid="parameters_8h_1a98c2bbfab5b52c9860d922eaf8a64846" kindref="member">nb_it_per_shift_cst</ref>){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|<sp/>Cometary<sp/>ions<sp/>too<sp/>fast<sp/>for<sp/>the<sp/>resolution:<sp/>nb_cell_per_shift_cst<sp/>&gt;<sp/>nb_it_per_shift_cst!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>pass_checks<sp/>=<sp/>false<sp/>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="parameters_8h_1aa8ffb231dc23b1d49b6f0390cf68c278" kindref="member">rate_save_particles_cst</ref>%<ref refid="parameters_8h_1ac8caa714bc337e1aec5936bf54bd6867" kindref="member">rate_save_field_cst</ref>!=0){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|<sp/>Fields<sp/>and<sp/>particles<sp/>will<sp/>not<sp/>be<sp/>saved<sp/>at<sp/>the<sp/>same<sp/>iterations.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>pass_checks<sp/>=<sp/>false<sp/>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pass_checks){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|<sp/>All<sp/>good.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="utils_8h_1a73344231681880ab13c2495a89962d98" kindref="member">sortie</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>else<sp/>if(<sp/>!info.st_mode<sp/>&amp;<sp/>!S_IFDIR<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>printf(<sp/>&quot;|<sp/>%s<sp/>is<sp/>a<sp/>directory\n&quot;,<sp/>pathname<sp/>)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>printf(<sp/>&quot;|<sp/>%s<sp/>is<sp/>no<sp/>directory\n&quot;,<sp/>pathname<sp/>)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>sortie()<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|_____________________________________________________________________________________&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="utils_8h_1af07ad6d256431e169587320815970782" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="utils_8h_1af07ad6d256431e169587320815970782" kindref="member">initialisation_cuda</ref>()</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>http://www.idris.fr/eng/jean-zay/gpu/jean-zay-gpu-mpi-cuda-aware-gpudirect-eng.html<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>local_rank_env;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>local_rank;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>cudaError_t<sp/>cudaRet;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Recovery<sp/>of<sp/>the<sp/>local<sp/>rank<sp/>of<sp/>the<sp/>process<sp/>via<sp/>the<sp/>environment<sp/>variable</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set<sp/>by<sp/>Slurm,<sp/>as<sp/><sp/>MPI_Comm_rank<sp/>cannot<sp/>be<sp/>used<sp/>here<sp/>because<sp/>this<sp/>routine</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>used<sp/>BEFORE<sp/>the<sp/>initialisation<sp/>of<sp/>MPI*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>local_rank_env<sp/>=<sp/>getenv(</highlight><highlight class="stringliteral">&quot;SLURM_LOCALID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(local_rank_env)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;._____________________________________________________________________________________&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_rank<sp/>=<sp/>atoi(local_rank_env);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Define<sp/>the<sp/>GPU<sp/>to<sp/>use<sp/>for<sp/>each<sp/>MPI<sp/>process<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cudaRet<sp/>=<sp/>cudaSetDevice(local_rank);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|<sp/>Setting<sp/>device<sp/>number<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>local_rank<sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cudaRet<sp/>!=<sp/>cudaSuccess)<sp/>{</highlight><highlight class="comment">//CUDA_SUCCESS)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|<sp/>Erreur:<sp/>cudaSetDevice<sp/>has<sp/>failed&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|_____________________________________________________________________________________&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>else<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>printf(&quot;Error<sp/>:<sp/>impossible<sp/>to<sp/>determine<sp/>the<sp/>local<sp/>rank<sp/>of<sp/>the<sp/>process\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>exit(1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Old:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>int<sp/>mpi_local_rank,<sp/>mpi_local_size<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MPI_Comm<sp/>mpi_local_comm<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MPI_Comm_split_type(MPI_COMM_WORLD,<sp/>MPI_COMM_TYPE_SHARED,<sp/>mpi_rank,<sp/>MPI_INFO_NULL,<sp/>&amp;mpi_local_comm)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MPI_Comm_size(mpi_local_comm,<sp/>&amp;mpi_local_size)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MPI_Comm_rank(mpi_local_comm,<sp/>&amp;mpi_local_rank)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cudaSetDevice(mpi_local_rank%mpi_local_size)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="utils_8h_1a3f26e3374514ef22d46cd9323a5c851a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="utils_8h_1a3f26e3374514ef22d46cd9323a5c851a" kindref="member">debug_leo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx_it,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ind_it_save,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>str_ind_save,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exit_leo,<sp/><ref refid="structparticles" kindref="compound">particles</ref>*<sp/>pa_h,<sp/><ref refid="structparticles" kindref="compound">particles</ref>*<sp/>pa_d,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsimu__fields" kindref="compound">simu_fields</ref>*<sp/>fields_h,<sp/><ref refid="structsimu__fields" kindref="compound">simu_fields</ref>*<sp/>fields_d,<sp/><ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref>*<sp/>B_h,<sp/><ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref>*<sp/>B_d,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>simu_param_h,<sp/><ref refid="structhouse__keeping" kindref="compound">house_keeping</ref>*<sp/>HK_h,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtrajectory" kindref="compound">trajectory</ref>*<sp/>traj_h,<sp/><ref refid="structtrajectory" kindref="compound">trajectory</ref>*<sp/>traj_d,<sp/><ref refid="structmoments" kindref="compound">moments</ref>*<sp/>mom_h,<sp/><ref refid="structmoments" kindref="compound">moments</ref>*<sp/>mom_d,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref>*<sp/>rms_h,<sp/><ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref>*<sp/>rms_d){</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>cudaDeviceSynchronize()<sp/>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx_it==ind_it_save){</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>cudaMemcpy(pa_h,<sp/><sp/><sp/><sp/><sp/>pa_d,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*pa_h),<sp/><sp/><sp/><sp/><sp/>cudaMemcpyDeviceToHost)<sp/>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>cudaMemcpy(fields_h,<sp/>fields_d,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*fields_h),<sp/>cudaMemcpyDeviceToHost)<sp/>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>cudaMemcpy(B_h,<sp/><sp/><sp/><sp/><sp/><sp/>B_d,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*B_h),<sp/><sp/><sp/><sp/><sp/><sp/>cudaMemcpyDeviceToHost)<sp/>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>cudaMemcpy(traj_h,<sp/><sp/><sp/>traj_d,<sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*traj_h),<sp/><sp/><sp/>cudaMemcpyDeviceToHost)<sp/>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>cudaMemcpy(mom_h,<sp/><sp/><sp/><sp/>mom_d,<sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*mom_h),<sp/><sp/><sp/><sp/>cudaMemcpyDeviceToHost)<sp/>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>cudaMemcpy(rms_h,<sp/><sp/><sp/><sp/>rms_d,<sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*rms_h),<sp/><sp/><sp/><sp/>cudaMemcpyDeviceToHost)<sp/>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="functions__o_8cpp_1a6a9e44e625b39ecb0baef909ce77fae8" kindref="member">output_HK</ref>(HK_h,<sp/>traj_h,<sp/>mom_h,<sp/>rms_h,<sp/>simu_param_h,<sp/>str_ind_save)<sp/>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="functions__o_8cpp_1ae2f34379129b9da1d3014dd79f52394b" kindref="member">output_particles</ref>(pa_h,<sp/>str_ind_save,<sp/>simu_param_h)<sp/>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="functions__o_8cpp_1ab84addcbb83e1873c4569bf5436fea82" kindref="member">output_fields</ref>(fields_h,<sp/>str_ind_save,<sp/>simu_param_h)<sp/>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="functions__o_8cpp_1ae2ceb6d9e9bdfa23fe1b8b1b9db97891" kindref="member">output_density_species</ref>(fields_h,<sp/>str_ind_save,<sp/>simu_param_h)<sp/>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="functions__o_8cpp_1a143446a334d11ea5b21701a6dbaf000a" kindref="member">output_ohm_components</ref>(B_h,<sp/>fields_h,<sp/>simu_param_h,<sp/>str_ind_save)<sp/>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="functions__o_8cpp_1adc6df44f3e3c60d212290f152e398c09" kindref="member">output_B_field</ref>(B_h,<sp/>str_ind_save,<sp/>simu_param_h)<sp/>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exit_leo)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>&amp;&amp;<sp/>simu_param_h-&gt;mpi_nb_proc==1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="utils_8h_1a73344231681880ab13c2495a89962d98" kindref="member">sortie</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="utils_8h_1adfa9161ce44078bfcedc94bac70d688f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="utils_8h_1adfa9161ce44078bfcedc94bac70d688f" kindref="member">check_state</ref>(<ref refid="structstate__solver" kindref="compound">state_solver</ref>*<sp/>sta_sol,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>s_p,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>error_ID=0,<sp/>cudaError_t<sp/>err=cudaSuccess){</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err!=cudaSuccess){</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>sta_sol-&gt;<ref refid="structstate__solver_1a2049e43a5df887ec2cb2d6b06fc1b9b2" kindref="member">error_ID</ref><sp/>=<sp/>error_ID<sp/>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>sta_sol-&gt;<ref refid="structstate__solver_1ae6223a9233cda9a04ccc501776f070ba" kindref="member">cuda_error_str</ref><sp/>=<sp/>cudaGetErrorString(err)<sp/>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sta_sol-&gt;<ref refid="structstate__solver_1a2049e43a5df887ec2cb2d6b06fc1b9b2" kindref="member">error_ID</ref><sp/>!=<sp/>0){</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Rank<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>s_p-&gt;<ref refid="structsimu__param_1ad366364f742ebfbe58727c0491c00c88" kindref="member">mpi_rank</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>sta_sol-&gt;<ref refid="structstate__solver_1a17243cfb663422f7a6add195944eb648" kindref="member">error_str2</ref>[sta_sol-&gt;<ref refid="structstate__solver_1a2049e43a5df887ec2cb2d6b06fc1b9b2" kindref="member">error_ID</ref>-1]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>sta_sol-&gt;<ref refid="structstate__solver_1ae6223a9233cda9a04ccc501776f070ba" kindref="member">cuda_error_str</ref><sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE)<sp/>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="utils_8h_1ab95e213ad28dfcc577fc05838fdad54f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="utils_8h_1ab95e213ad28dfcc577fc05838fdad54f" kindref="member">check_memory_device</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tag){</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>free,<sp/>total;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id<sp/>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>cudaGetDevice(<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>cudaMemGetInfo(<sp/>&amp;free,<sp/>&amp;total<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;._____________________________________________________________________________________\n|\n|<sp/>Tag<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>tag<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>MPI<sp/>rank<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rank<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>Device<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>memory:<sp/>free=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>free/1000000</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>total=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>total/1000000</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n|_____________________________________________________________________________________&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>int<sp/>dev_cnt<sp/>=<sp/>0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>cudaGetDeviceCount(<sp/>&amp;dev_cnt<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(<sp/>&quot;rank<sp/>%d,<sp/>cnt<sp/>%d\n&quot;,<sp/>mpi_rank,<sp/>dev_cnt<sp/>)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>cudaDeviceProp<sp/>prop;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>(int<sp/>dev<sp/>=<sp/>0;<sp/>dev<sp/>&lt;<sp/>dev_cnt;<sp/>++dev)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>cudaGetDeviceProperties(<sp/>&amp;prop,<sp/>dev<sp/>)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>printf(<sp/>&quot;rank<sp/>%d,<sp/>dev<sp/>%d,<sp/>prop<sp/>%s,<sp/>pci<sp/>%d,<sp/>%d,<sp/>%d\n&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mpi_rank,<sp/>dev,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prop.name,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prop.pciBusID,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prop.pciDeviceID,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prop.pciDomainID<sp/>)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;\n._______________________________________________________________________\n|\n&quot;<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;|<sp/>tag<sp/>&quot;<sp/>&lt;&lt;<sp/>tag<sp/>&lt;&lt;<sp/>&quot;<sp/>rank<sp/>&quot;<sp/>&lt;&lt;<sp/>rank<sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;|<sp/>nb<sp/>GPUs<sp/>&quot;<sp/>&lt;&lt;<sp/>num_gpus<sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>(<sp/>int<sp/>gpu_id<sp/>=<sp/>0;<sp/>gpu_id<sp/>&lt;<sp/>num_gpus;<sp/>gpu_id++<sp/>)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cudaSetDevice(<sp/>gpu_id<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">//__________________________________________________________________________________________________________________</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="functions__o_8h_1a73344231681880ab13c2495a89962d98" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="utils_8h_1a73344231681880ab13c2495a89962d98" kindref="member">sortie</ref>(){</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id<sp/>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>cudaGetDevice(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>MPI_Barrier(MPI_COMM_WORLD)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|\n|<sp/>Device<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>Off.\n|_____________________________________________________________________\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl<sp/>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>int<sp/>error<sp/>=<sp/>1<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>MPI_Bcast(&amp;error,<sp/>1,<sp/>MPI_INT,<sp/>simu_param_h-&gt;mpi_rank,<sp/>MPI_COMM_WORLD)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>MPI_Finalize()<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>exit(EXIT_FAILURE)<sp/>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/etienneb/Models/Menura/menura/src/utils.h"/>
+  </compounddef>
+</doxygen>

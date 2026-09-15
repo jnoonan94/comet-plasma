@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsimu__B__field__2" kind="class" language="C++" prot="public">
+    <compoundname>simu_B_field_2</compoundname>
+    <includes refid="structures_8h" local="no">structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsimu__B__field__2_1aef25670862887546461cfafff8b3480b" prot="public" static="no" mutable="no">
+        <type>float ***</type>
+        <definition>float*** simu_B_field_2::B</definition>
+        <argsstring></argsstring>
+        <name>B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="17" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimu__B__field__2_1a1970b2412788117e7c8de24a36ea5798" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>simu_B_field_2::simu_B_field_2</definition>
+        <argsstring>(simu_param *sP)</argsstring>
+        <name>simu_B_field_2</name>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="19" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="19" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimu__B__field__2_1ae1ff58377d607999ce7d508098b5ee6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>simu_B_field_2::~simu_B_field_2</definition>
+        <argsstring>()</argsstring>
+        <name>~simu_B_field_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="30" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="11" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="11" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classsimu__B__field__2_1aef25670862887546461cfafff8b3480b" prot="public" virt="non-virtual"><scope>simu_B_field_2</scope><name>B</name></member>
+      <member refid="classsimu__B__field__2_1a1970b2412788117e7c8de24a36ea5798" prot="public" virt="non-virtual"><scope>simu_B_field_2</scope><name>simu_B_field_2</name></member>
+      <member refid="classsimu__B__field__2_1ae1ff58377d607999ce7d508098b5ee6f" prot="public" virt="non-virtual"><scope>simu_B_field_2</scope><name>~simu_B_field_2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

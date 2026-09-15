@@ -1,0 +1,878 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="kernels__HK_8cuh" kind="file" language="C++">
+    <compoundname>kernels_HK.cuh</compoundname>
+    <includes local="no">cuda_runtime.h</includes>
+    <includes local="no">curand.h</includes>
+    <includes local="no">curand_kernel.h</includes>
+    <includes refid="parameters_8h" local="yes">parameters.h</includes>
+    <includedby refid="kernels__calls_8h" local="yes">/home/etienneb/Models/Menura/menura/src/kernels_calls.h</includedby>
+    <includedby refid="menura_8cu" local="yes">/home/etienneb/Models/Menura/menura/src/menura.cu</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="1">
+        <label>/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh</label>
+        <link refid="kernels__HK_8cuh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cmath</label>
+      </node>
+      <node id="8">
+        <label>fstream</label>
+      </node>
+      <node id="5">
+        <label>parameters.h</label>
+        <link refid="parameters_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>curand.h</label>
+      </node>
+      <node id="6">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>curand_kernel.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh</label>
+        <link refid="kernels__HK_8cuh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/etienneb/Models/Menura/menura/src/menura.cu</label>
+        <link refid="menura_8cu"/>
+      </node>
+      <node id="2">
+        <label>/home/etienneb/Models/Menura/menura/src/kernels_calls.h</label>
+        <link refid="kernels__calls_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="kernels__HK_8cuh_1a4dad747a40834785aec2790c3b0043d3" prot="public" static="no">
+        <name>__KERNELSHK_H_INCLUDED__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="2" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="kernels__HK_8cuh_1ab32f5b13b070fa45f8cf044d03ae04f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void print_param_k</definition>
+        <argsstring>(simu_param *sP)</argsstring>
+        <name>print_param_k</name>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="10" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1aff5e9e71d6ac4c4290b7ebc8d43027f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void moments_particles_k</definition>
+        <argsstring>(particles *p, moments *mom, int idx_save, simu_param *sP, house_keeping *HK)</argsstring>
+        <name>moments_particles_k</name>
+        <param>
+          <type><ref refid="structparticles" kindref="compound">particles</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structmoments" kindref="compound">moments</ref> *</type>
+          <declname>mom</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx_save</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <param>
+          <type><ref refid="structhouse__keeping" kindref="compound">house_keeping</ref> *</type>
+          <declname>HK</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="15" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="15" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1adb6fc5983d7908ea365766ce35f5eb00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void moments_grids_k</definition>
+        <argsstring>(simu_B_field *B, simu_fields *fields, moments *mom, int idx_save)</argsstring>
+        <name>moments_grids_k</name>
+        <param>
+          <type><ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref> *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__fields" kindref="compound">simu_fields</ref> *</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type><ref refid="structmoments" kindref="compound">moments</ref> *</type>
+          <declname>mom</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx_save</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="46" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="46" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1a5dee0c4a0b46300b24543cbb3304d92a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void divide_moments_k</definition>
+        <argsstring>(moments *mom, int idx_save, simu_param *sP)</argsstring>
+        <name>divide_moments_k</name>
+        <param>
+          <type><ref refid="structmoments" kindref="compound">moments</ref> *</type>
+          <declname>mom</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx_save</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="113" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="113" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1a478d521a8f266eaef370e8c301e6f652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void update_traj_k</definition>
+        <argsstring>(particles *p, trajectory *traj, int ind_it, int indPart)</argsstring>
+        <name>update_traj_k</name>
+        <param>
+          <type><ref refid="structparticles" kindref="compound">particles</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrajectory" kindref="compound">trajectory</ref> *</type>
+          <declname>traj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ind_it</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indPart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="138" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="138" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1afec5d12153a7724bd439457c109efd25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void update_fields_time_space_k</definition>
+        <argsstring>(simu_fields *fields, simu_B_field *B, fields_time_space *fields_t_s, int idx_save, simu_param *sP)</argsstring>
+        <name>update_fields_time_space_k</name>
+        <param>
+          <type><ref refid="structsimu__fields" kindref="compound">simu_fields</ref> *</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref> *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="structfields__time__space" kindref="compound">fields_time_space</ref> *</type>
+          <declname>fields_t_s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx_save</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="153" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="153" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1a4717e28d84e28bb9fc7a24e872e63fa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void reset_rms_k</definition>
+        <argsstring>(root_mean_sqr *rms)</argsstring>
+        <name>reset_rms_k</name>
+        <param>
+          <type><ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref> *</type>
+          <declname>rms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="193" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1ad76f8ee5b731a56e6c40c4d8abab987b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void rms_k</definition>
+        <argsstring>(root_mean_sqr *rms, simu_param *sP, float G[len_x_cst+4][len_y_cst+4][len_z_cst+4])</argsstring>
+        <name>rms_k</name>
+        <param>
+          <type><ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref> *</type>
+          <declname>rms</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>G</declname>
+          <array>[len_x_cst+4][len_y_cst+4][len_z_cst+4]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="214" column="21" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="214" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1a07192e3bfeb5b2132f6d3a99a9038151" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void sum_rms_k</definition>
+        <argsstring>(root_mean_sqr *rms, simu_param *sP, float G[nb_it_max_cst], int idx_save)</argsstring>
+        <name>sum_rms_k</name>
+        <param>
+          <type><ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref> *</type>
+          <declname>rms</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>G</declname>
+          <array>[nb_it_max_cst]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx_save</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="232" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="232" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1a6a5dc55fad40b3527e7727305466fb98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void reset_state_solver_k</definition>
+        <argsstring>(state_solver *sta_sol)</argsstring>
+        <name>reset_state_solver_k</name>
+        <param>
+          <type><ref refid="structstate__solver" kindref="compound">state_solver</ref> *</type>
+          <declname>sta_sol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="240" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="240" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1a0bc81379cf42fc752907587135530691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void check_grids_k</definition>
+        <argsstring>(simu_B_field *B, simu_fields *fields, state_solver *staSol, int indIt, int nbNode, int tag, simu_param *sP)</argsstring>
+        <name>check_grids_k</name>
+        <param>
+          <type><ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref> *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__fields" kindref="compound">simu_fields</ref> *</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type><ref refid="structstate__solver" kindref="compound">state_solver</ref> *</type>
+          <declname>staSol</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indIt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbNode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="249" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="249" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1ab3c0bfe2e61c65c727fa08156883a0a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void print_sta_sol_k</definition>
+        <argsstring>(state_solver *staSol, int indIt, int tag)</argsstring>
+        <name>print_sta_sol_k</name>
+        <param>
+          <type><ref refid="structstate__solver" kindref="compound">state_solver</ref> *</type>
+          <declname>staSol</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indIt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="346" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="346" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1adb6678b66a6f5b6dbe393a62cacaaff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void HK_run_time_k</definition>
+        <argsstring>(house_keeping *HK, int idx_save, float t, int run_time)</argsstring>
+        <name>HK_run_time_k</name>
+        <param>
+          <type><ref refid="structhouse__keeping" kindref="compound">house_keeping</ref> *</type>
+          <declname>HK</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx_save</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>run_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="359" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="359" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1a66e6d55834d7a97a06998afee02fd6cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void HK_nb_part_send_down_k</definition>
+        <argsstring>(house_keeping *h_k, int nb_part_send, int idx_save)</argsstring>
+        <name>HK_nb_part_send_down_k</name>
+        <param>
+          <type><ref refid="structhouse__keeping" kindref="compound">house_keeping</ref> *</type>
+          <declname>h_k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_part_send</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx_save</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="366" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="366" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="kernels__HK_8cuh_1a2c74ce668dba9c4f4b7784e42f1dd401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__global__ void</type>
+        <definition>__global__ void HK_nb_part_send_up_k</definition>
+        <argsstring>(house_keeping *h_k, int nb_part_send, int idx_save)</argsstring>
+        <name>HK_nb_part_send_up_k</name>
+        <param>
+          <type><ref refid="structhouse__keeping" kindref="compound">house_keeping</ref> *</type>
+          <declname>h_k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_part_send</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx_save</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" line="370" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh" bodystart="370" bodyend="373"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__KERNELSHK_H_INCLUDED__<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>x.h<sp/>hasn&apos;t<sp/>been<sp/>included<sp/>yet...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__KERNELSHK_H_INCLUDED__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cuda_runtime.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;curand.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;curand_kernel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="parameters_8h" kindref="compound">parameters.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1ab32f5b13b070fa45f8cf044d03ae04f9" kindref="member">print_param_k</ref>(<ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP){</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Print<sp/>param:<sp/>%i\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="parameters_8h_1ae86e3ec39013a0b8573f27e9b9a06a9b" kindref="member">len_x_cst</ref>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//__________________________</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1aff5e9e71d6ac4c4290b7ebc8d43027f1" kindref="member">moments_particles_k</ref>(<ref refid="structparticles" kindref="compound">particles</ref>*<sp/>p,<sp/><ref refid="structmoments" kindref="compound">moments</ref>*<sp/>mom,<sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx_save,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP,<sp/><ref refid="structhouse__keeping" kindref="compound">house_keeping</ref>*<sp/>HK){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>threadIdx.x<sp/>+<sp/>blockIdx.x*blockDim.x<sp/>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx==0){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx_save&gt;=<ref refid="parameters_8h_1ac7f9010423934a87468d1a50ec9d0e77" kindref="member">len_save_t_cst</ref>){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Went<sp/>too<sp/>far<sp/>in<sp/>moments_particles_k()\n&quot;</highlight><highlight class="normal">)<sp/>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(idx&lt;<ref refid="parameters_8h_1a738b5ba209cc1374757e051b9c297b33" kindref="member">pool_size_cst</ref>)<sp/>&amp;&amp;<sp/>(p-&gt;<ref refid="structparticles_1ab750e0f48cf50d114f9647488b46afb0" kindref="member">active</ref>[idx])<sp/>){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a92956e216df11edee4ced5d26a5b60ca" kindref="member">E_kin</ref>[idx_save],<sp/>(p-&gt;<ref refid="structparticles_1a349ed5b2638968e01eb2cb2d3c24bd96" kindref="member">vx</ref>[idx]*p-&gt;<ref refid="structparticles_1a349ed5b2638968e01eb2cb2d3c24bd96" kindref="member">vx</ref>[idx]<sp/>+<sp/>p-&gt;<ref refid="structparticles_1a54bd02cf71b64191abf44a39dca5a059" kindref="member">vy</ref>[idx]*p-&gt;<ref refid="structparticles_1a54bd02cf71b64191abf44a39dca5a059" kindref="member">vy</ref>[idx]<sp/>+<sp/>p-&gt;<ref refid="structparticles_1a5f5040f755627ae27677c0ea102839b7" kindref="member">vz</ref>[idx]*p-&gt;<ref refid="structparticles_1a5f5040f755627ae27677c0ea102839b7" kindref="member">vz</ref>[idx])<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a33270f9bb00ddb5aae2576848a5c9dac" kindref="member">nb_part_tot</ref>[idx_save],<sp/>1)<sp/>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" kindref="member">vel_part</ref>[0][idx_save],<sp/>p-&gt;<ref refid="structparticles_1a349ed5b2638968e01eb2cb2d3c24bd96" kindref="member">vx</ref>[idx])<sp/>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" kindref="member">vel_part</ref>[1][idx_save],<sp/>p-&gt;<ref refid="structparticles_1a54bd02cf71b64191abf44a39dca5a059" kindref="member">vy</ref>[idx])<sp/>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" kindref="member">vel_part</ref>[2][idx_save],<sp/>p-&gt;<ref refid="structparticles_1a5f5040f755627ae27677c0ea102839b7" kindref="member">vz</ref>[idx])<sp/>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1adea9105aa85e7324477e87f8ca5a88f4" kindref="member">vel_th_part</ref>[0][idx_save],<sp/>p-&gt;<ref refid="structparticles_1a349ed5b2638968e01eb2cb2d3c24bd96" kindref="member">vx</ref>[idx]*p-&gt;<ref refid="structparticles_1a349ed5b2638968e01eb2cb2d3c24bd96" kindref="member">vx</ref>[idx])<sp/>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1adea9105aa85e7324477e87f8ca5a88f4" kindref="member">vel_th_part</ref>[1][idx_save],<sp/>p-&gt;<ref refid="structparticles_1a54bd02cf71b64191abf44a39dca5a059" kindref="member">vy</ref>[idx]*p-&gt;<ref refid="structparticles_1a54bd02cf71b64191abf44a39dca5a059" kindref="member">vy</ref>[idx])<sp/>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1adea9105aa85e7324477e87f8ca5a88f4" kindref="member">vel_th_part</ref>[2][idx_save],<sp/>p-&gt;<ref refid="structparticles_1a5f5040f755627ae27677c0ea102839b7" kindref="member">vz</ref>[idx]*p-&gt;<ref refid="structparticles_1a5f5040f755627ae27677c0ea102839b7" kindref="member">vz</ref>[idx])<sp/>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p-&gt;<ref refid="structparticles_1aa099d5598cef99211ac2dd906dd2c748" kindref="member">ID</ref>[idx]==0){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;HK-&gt;<ref refid="structhouse__keeping_1a70de9d5a54800f3fa4ed2ced17cc5483" kindref="member">nbPartSW</ref>[idx_save],<sp/>1)<sp/>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p-&gt;<ref refid="structparticles_1aa099d5598cef99211ac2dd906dd2c748" kindref="member">ID</ref>[idx]==1){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;HK-&gt;<ref refid="structhouse__keeping_1a32584db7cb1aeb0db3232ce661e4f4a8" kindref="member">nbPartPla</ref>[idx_save],<sp/>1)<sp/>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1adb6fc5983d7908ea365766ce35f5eb00" kindref="member">moments_grids_k</ref>(<ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref>*<sp/>B,<sp/><ref refid="structsimu__fields" kindref="compound">simu_fields</ref>*<sp/>fields,<sp/><ref refid="structmoments" kindref="compound">moments</ref>*<sp/>mom,<sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx_save){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>threadIdx.x<sp/>+<sp/>blockIdx.x*blockDim.x<sp/>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx_save&gt;=<ref refid="parameters_8h_1ac7f9010423934a87468d1a50ec9d0e77" kindref="member">len_save_t_cst</ref>){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Went<sp/>too<sp/>far<sp/>in<sp/>moments_grids_k()\n&quot;</highlight><highlight class="normal">)<sp/>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>idx&lt;<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref><sp/>){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>NB_DIM==2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>floorf(idx/<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>idx-i*<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref><sp/>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>+=<sp/>2<sp/>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>+=<sp/>2<sp/>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a002420b624f4eeaec8a04e6d52bb626b" kindref="member">E_mag</ref>[idx_save],<sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j]*B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j]<sp/>+</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j]*B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j]<sp/>+</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j]*B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j])<sp/>)<sp/>;<sp/></highlight><highlight class="comment">//<sp/>/nb_nodes_cst<sp/>)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a2dbd8e87b451da035269d77f84edffc0" kindref="member">E_elec</ref>[idx_save],<sp/>(fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[0][i][j]*fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[0][i][j]<sp/>+</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[1][i][j]*fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[1][i][j]<sp/>+</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[2][i][j]*fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[2][i][j])<sp/>)<sp/>;<sp/></highlight><highlight class="comment">//<sp/>/nb_nodes_cst<sp/>)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" kindref="member">B_mean</ref>[0][idx_save],<sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" kindref="member">B_mean</ref>[1][idx_save],<sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" kindref="member">B_mean</ref>[2][idx_save],<sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a568f0a8ed8594f15c625abd5bcd0e7eb" kindref="member">B_var</ref>[0][idx_save],<sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j]*B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j])/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a568f0a8ed8594f15c625abd5bcd0e7eb" kindref="member">B_var</ref>[1][idx_save],<sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j]*B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j])/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a568f0a8ed8594f15c625abd5bcd0e7eb" kindref="member">B_var</ref>[2][idx_save],<sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j]*B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j])/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1ae388953ccf5135df9752f3616f417e83" kindref="member">dens_tot</ref>[idx_save],<sp/>fields-&gt;<ref refid="structsimu__fields_1ae40973db0882ab5f06bdbda5379599f0" kindref="member">counts</ref>[i][j])<sp/>;<sp/></highlight><highlight class="comment">//fields-&gt;density[i][j])<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>atomicAdd(&amp;mom-&gt;vel_tot[ind_it],<sp/>sqrtf(fields-&gt;fluxNum[0][i][j]*fields-&gt;fluxNum[0][i][j]+fields-&gt;fluxNum[1][i][j]*fields-&gt;fluxNum[1][i][j]+fields-&gt;fluxNum[2][i][j]*fields-&gt;fluxNum[2][i][j])<sp/>)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a2deef4654def80850fcf4340cc12794c" kindref="member">Ji_mean</ref>[0][idx_save],<sp/>fields-&gt;<ref refid="structsimu__fields_1a24e1d3ac7ace7bceffbc5d038795d5d1" kindref="member">Ji</ref>[0][i][j]/(fields-&gt;<ref refid="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" kindref="member">density</ref>[i][j]*<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a2deef4654def80850fcf4340cc12794c" kindref="member">Ji_mean</ref>[1][idx_save],<sp/>fields-&gt;<ref refid="structsimu__fields_1a24e1d3ac7ace7bceffbc5d038795d5d1" kindref="member">Ji</ref>[1][i][j]/(fields-&gt;<ref refid="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" kindref="member">density</ref>[i][j]*<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a2deef4654def80850fcf4340cc12794c" kindref="member">Ji_mean</ref>[2][idx_save],<sp/>fields-&gt;<ref refid="structsimu__fields_1a24e1d3ac7ace7bceffbc5d038795d5d1" kindref="member">Ji</ref>[2][i][j]/(fields-&gt;<ref refid="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" kindref="member">density</ref>[i][j]*<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#elif<sp/>NB_DIM==3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>floorf(idx/(<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>*<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>))<sp/>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>floorf(idx-i*(<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>*<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>))/<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref><sp/>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>idx-i*(<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>*<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>)-j*<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref><sp/>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>+=<sp/>2<sp/>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>+=<sp/>2<sp/>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>k<sp/>+=<sp/>2<sp/>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a002420b624f4eeaec8a04e6d52bb626b" kindref="member">E_mag</ref>[idx_save],<sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j][k]*B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j][k]<sp/>+</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j][k]*B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j][k]<sp/>+</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j][k]*B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j][k])<sp/>)<sp/>;<sp/></highlight><highlight class="comment">//<sp/>/nb_nodes_cst)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a2dbd8e87b451da035269d77f84edffc0" kindref="member">E_elec</ref>[idx_save],<sp/>(fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[0][i][j][k]*fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[0][i][j][k]<sp/>+</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[1][i][j][k]*fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[1][i][j][k]<sp/>+</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[2][i][j][k]*fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[2][i][j][k])<sp/>)<sp/>;<sp/></highlight><highlight class="comment">//<sp/>/nb_nodes_cst)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" kindref="member">B_mean</ref>[0][idx_save],<sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j][k]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" kindref="member">B_mean</ref>[1][idx_save],<sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j][k]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" kindref="member">B_mean</ref>[2][idx_save],<sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j][k]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a568f0a8ed8594f15c625abd5bcd0e7eb" kindref="member">B_var</ref>[0][idx_save],<sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j][k]*B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j][k])/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a568f0a8ed8594f15c625abd5bcd0e7eb" kindref="member">B_var</ref>[1][idx_save],<sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j][k]*B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j][k])/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a568f0a8ed8594f15c625abd5bcd0e7eb" kindref="member">B_var</ref>[2][idx_save],<sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j][k]*B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j][k])/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1ae388953ccf5135df9752f3616f417e83" kindref="member">dens_tot</ref>[idx_save],<sp/>fields-&gt;<ref refid="structsimu__fields_1ae40973db0882ab5f06bdbda5379599f0" kindref="member">counts</ref>[i][j][k])<sp/>;<sp/></highlight><highlight class="comment">//fields-&gt;density[i][j][k])<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>atomicAdd(&amp;mom-&gt;vel_tot[ind_it],<sp/>sqrtf(fields-&gt;fluxNum[0][i][j][k]*fields-&gt;fluxNum[0][i][j][k]+fields-&gt;fluxNum[1][i][j][k]*fields-&gt;fluxNum[1][i][j][k]+fields-&gt;fluxNum[2][i][j][k]*fields-&gt;fluxNum[2][i][j][k])<sp/>)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a2deef4654def80850fcf4340cc12794c" kindref="member">Ji_mean</ref>[0][idx_save],<sp/>fields-&gt;<ref refid="structsimu__fields_1a24e1d3ac7ace7bceffbc5d038795d5d1" kindref="member">Ji</ref>[0][i][j][k]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref><sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a2deef4654def80850fcf4340cc12794c" kindref="member">Ji_mean</ref>[1][idx_save],<sp/>fields-&gt;<ref refid="structsimu__fields_1a24e1d3ac7ace7bceffbc5d038795d5d1" kindref="member">Ji</ref>[1][i][j][k]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref><sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;mom-&gt;<ref refid="structmoments_1a2deef4654def80850fcf4340cc12794c" kindref="member">Ji_mean</ref>[2][idx_save],<sp/>fields-&gt;<ref refid="structsimu__fields_1a24e1d3ac7ace7bceffbc5d038795d5d1" kindref="member">Ji</ref>[2][i][j][k]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref><sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1a5dee0c4a0b46300b24543cbb3304d92a" kindref="member">divide_moments_k</ref>(<ref refid="structmoments" kindref="compound">moments</ref>*<sp/>mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx_save,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx_save&gt;=<ref refid="parameters_8h_1ac7f9010423934a87468d1a50ec9d0e77" kindref="member">len_save_t_cst</ref>){</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Went<sp/>too<sp/>far<sp/>in<sp/>divide_moments_k()\n&quot;</highlight><highlight class="normal">)<sp/>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;v_x:<sp/>%.7e,<sp/>%i<sp/>particles,<sp/>indIt:<sp/>%i.\n&quot;,<sp/>mom-&gt;vel_part[0][idx_save],<sp/>mom-&gt;nb_part_tot[idx_save],<sp/>idx_save)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;W_B:<sp/>%.7e\n&quot;,<sp/>mom-&gt;E_mag[idx_save])<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>mom-&gt;E_kin[idx_save]<sp/>/=<sp/>mom-&gt;nb_part_tot[idx_save]<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>mom-&gt;<ref refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" kindref="member">vel_part</ref>[0][idx_save]<sp/>/=<sp/>mom-&gt;<ref refid="structmoments_1a33270f9bb00ddb5aae2576848a5c9dac" kindref="member">nb_part_tot</ref>[idx_save]<sp/>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>mom-&gt;<ref refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" kindref="member">vel_part</ref>[1][idx_save]<sp/>/=<sp/>mom-&gt;<ref refid="structmoments_1a33270f9bb00ddb5aae2576848a5c9dac" kindref="member">nb_part_tot</ref>[idx_save]<sp/>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>mom-&gt;<ref refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" kindref="member">vel_part</ref>[2][idx_save]<sp/>/=<sp/>mom-&gt;<ref refid="structmoments_1a33270f9bb00ddb5aae2576848a5c9dac" kindref="member">nb_part_tot</ref>[idx_save]<sp/>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>mom-&gt;<ref refid="structmoments_1adea9105aa85e7324477e87f8ca5a88f4" kindref="member">vel_th_part</ref>[0][idx_save]<sp/>/=<sp/>mom-&gt;<ref refid="structmoments_1a33270f9bb00ddb5aae2576848a5c9dac" kindref="member">nb_part_tot</ref>[idx_save]<sp/>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>mom-&gt;<ref refid="structmoments_1adea9105aa85e7324477e87f8ca5a88f4" kindref="member">vel_th_part</ref>[1][idx_save]<sp/>/=<sp/>mom-&gt;<ref refid="structmoments_1a33270f9bb00ddb5aae2576848a5c9dac" kindref="member">nb_part_tot</ref>[idx_save]<sp/>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>mom-&gt;<ref refid="structmoments_1adea9105aa85e7324477e87f8ca5a88f4" kindref="member">vel_th_part</ref>[2][idx_save]<sp/>/=<sp/>mom-&gt;<ref refid="structmoments_1a33270f9bb00ddb5aae2576848a5c9dac" kindref="member">nb_part_tot</ref>[idx_save]<sp/>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>mom-&gt;<ref refid="structmoments_1adea9105aa85e7324477e87f8ca5a88f4" kindref="member">vel_th_part</ref>[0][idx_save]<sp/>-=<sp/>mom-&gt;<ref refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" kindref="member">vel_part</ref>[0][idx_save]*mom-&gt;<ref refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" kindref="member">vel_part</ref>[0][idx_save]<sp/>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>mom-&gt;<ref refid="structmoments_1adea9105aa85e7324477e87f8ca5a88f4" kindref="member">vel_th_part</ref>[1][idx_save]<sp/>-=<sp/>mom-&gt;<ref refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" kindref="member">vel_part</ref>[1][idx_save]*mom-&gt;<ref refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" kindref="member">vel_part</ref>[1][idx_save]<sp/>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>mom-&gt;<ref refid="structmoments_1adea9105aa85e7324477e87f8ca5a88f4" kindref="member">vel_th_part</ref>[2][idx_save]<sp/>-=<sp/>mom-&gt;<ref refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" kindref="member">vel_part</ref>[2][idx_save]*mom-&gt;<ref refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" kindref="member">vel_part</ref>[2][idx_save]<sp/>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>mom-&gt;<ref refid="structmoments_1a568f0a8ed8594f15c625abd5bcd0e7eb" kindref="member">B_var</ref>[0][idx_save]<sp/>-=<sp/>mom-&gt;<ref refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" kindref="member">B_mean</ref>[0][idx_save]*mom-&gt;<ref refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" kindref="member">B_mean</ref>[0][idx_save]<sp/>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>mom-&gt;<ref refid="structmoments_1a568f0a8ed8594f15c625abd5bcd0e7eb" kindref="member">B_var</ref>[1][idx_save]<sp/>-=<sp/>mom-&gt;<ref refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" kindref="member">B_mean</ref>[1][idx_save]*mom-&gt;<ref refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" kindref="member">B_mean</ref>[1][idx_save]<sp/>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>mom-&gt;<ref refid="structmoments_1a568f0a8ed8594f15c625abd5bcd0e7eb" kindref="member">B_var</ref>[2][idx_save]<sp/>-=<sp/>mom-&gt;<ref refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" kindref="member">B_mean</ref>[2][idx_save]*mom-&gt;<ref refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" kindref="member">B_mean</ref>[2][idx_save]<sp/>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1a478d521a8f266eaef370e8c301e6f652" kindref="member">update_traj_k</ref>(<ref refid="structparticles" kindref="compound">particles</ref>*<sp/>p,<sp/><ref refid="structtrajectory" kindref="compound">trajectory</ref>*<sp/>traj,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ind_it,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indPart){</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(indIt==0){printf(&quot;updatetraj<sp/>%.4e,<sp/>%.4e,<sp/>%.4e\n&quot;,<sp/>p-&gt;vx[indPart],<sp/>p-&gt;vx[indPart],<sp/>p-&gt;vx[indPart]);}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>traj-&gt;<ref refid="structtrajectory_1a8742fec081ac9ec1186d385beed3c728" kindref="member">rx</ref>[ind_it]<sp/>=<sp/>p-&gt;<ref refid="structparticles_1ac564bf44942c3296b0bb765d9c9a545d" kindref="member">rx</ref>[indPart]<sp/>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>traj-&gt;<ref refid="structtrajectory_1a8ce1c027a4d6d73723a92a2d223b503c" kindref="member">ry</ref>[ind_it]<sp/>=<sp/>p-&gt;<ref refid="structparticles_1aba286af18690d67c641f20b0622fae97" kindref="member">ry</ref>[indPart]<sp/>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>NB_DIM==3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>traj-&gt;<ref refid="structtrajectory_1aff45cfb05a5957dd672c6a6836f4a95e" kindref="member">rz</ref>[ind_it]<sp/>=<sp/>p-&gt;<ref refid="structparticles_1a46db1788e16f6f838b5ecffdff24c709" kindref="member">rz</ref>[indPart]<sp/>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>traj-&gt;<ref refid="structtrajectory_1a8840d2eea8e026d7f236bbf97dbbf7de" kindref="member">vx</ref>[ind_it]<sp/>=<sp/>p-&gt;<ref refid="structparticles_1a349ed5b2638968e01eb2cb2d3c24bd96" kindref="member">vx</ref>[indPart]<sp/>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>traj-&gt;<ref refid="structtrajectory_1a1969c8466aeff30406fdbb3ed672f50a" kindref="member">vy</ref>[ind_it]<sp/>=<sp/>p-&gt;<ref refid="structparticles_1a54bd02cf71b64191abf44a39dca5a059" kindref="member">vy</ref>[indPart]<sp/>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>traj-&gt;<ref refid="structtrajectory_1a48dfe5f5e354603fc2771ae1e965cf5d" kindref="member">vz</ref>[ind_it]<sp/>=<sp/>p-&gt;<ref refid="structparticles_1a5f5040f755627ae27677c0ea102839b7" kindref="member">vz</ref>[indPart]<sp/>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(indIt==0){printf(&quot;updatetraj<sp/>%.4e,<sp/>%.4e,<sp/>%.4e\n&quot;,<sp/>traj-&gt;vx[indPart],<sp/>traj-&gt;vx[indPart],<sp/>traj-&gt;vx[indPart]);}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1afec5d12153a7724bd439457c109efd25" kindref="member">update_fields_time_space_k</ref>(<ref refid="structsimu__fields" kindref="compound">simu_fields</ref>*<sp/>fields,<sp/><ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref>*<sp/>B,<sp/><ref refid="structfields__time__space" kindref="compound">fields_time_space</ref>*<sp/>fields_t_s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx_save,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP){</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>threadIdx.x<sp/>+<sp/>blockIdx.x*blockDim.x<sp/>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx_save&gt;=<ref refid="parameters_8h_1ac7f9010423934a87468d1a50ec9d0e77" kindref="member">len_save_t_cst</ref>){</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Went<sp/>too<sp/>far<sp/>in<sp/>update_fields_time_space_k()\n&quot;</highlight><highlight class="normal">)<sp/>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(idx<sp/>&lt;<sp/><ref refid="parameters_8h_1aceb48483f47984ebae2fc39315ecd209" kindref="member">len_save_x_cst</ref>){</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>NB_DIM==2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>int(idx*<ref refid="parameters_8h_1a1ddb2c9c938018e1fc79c13abc3f9205" kindref="member">rate_save_x_cst</ref><sp/>+<sp/>2)<sp/>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>int((<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>+4)/2.)<sp/>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a2de395a18dc47ba2d3c9923c3b8fc0ba" kindref="member">density</ref>[idx_save][idx]<sp/>=<sp/>fields-&gt;<ref refid="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" kindref="member">density</ref>[i][j]<sp/>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a2f6961e4eeb07815433b72a531dc9fdb" kindref="member">E</ref>[0][idx_save][idx]<sp/>=<sp/>fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[0][i][j]<sp/>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a2f6961e4eeb07815433b72a531dc9fdb" kindref="member">E</ref>[1][idx_save][idx]<sp/>=<sp/>fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[1][i][j]<sp/>;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a2f6961e4eeb07815433b72a531dc9fdb" kindref="member">E</ref>[2][idx_save][idx]<sp/>=<sp/>fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[2][i][j]<sp/>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a52fd332eb5071a892ab296d1d5782934" kindref="member">B</ref>[0][idx_save][idx]<sp/>=<sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j]<sp/>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a52fd332eb5071a892ab296d1d5782934" kindref="member">B</ref>[1][idx_save][idx]<sp/>=<sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j]<sp/>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a52fd332eb5071a892ab296d1d5782934" kindref="member">B</ref>[2][idx_save][idx]<sp/>=<sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j]<sp/>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#elif<sp/>NB_DIM==3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>int(idx*<ref refid="parameters_8h_1a1ddb2c9c938018e1fc79c13abc3f9205" kindref="member">rate_save_x_cst</ref><sp/>+<sp/>2)<sp/>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>int((<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>+4)/2.)<sp/>;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>int((<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>+4)/2.)<sp/>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ind_t<sp/>=<sp/>int(idx_save/<ref refid="parameters_8h_1aa8bee530a37e3e84d255553d37211f25" kindref="member">rate_save_t_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a2de395a18dc47ba2d3c9923c3b8fc0ba" kindref="member">density</ref>[ind_t][idx]<sp/>=<sp/>fields-&gt;<ref refid="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" kindref="member">density</ref>[i][j][k]<sp/>;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a2f6961e4eeb07815433b72a531dc9fdb" kindref="member">E</ref>[0][ind_t][idx]<sp/>=<sp/>fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[0][i][j][k]<sp/>;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a2f6961e4eeb07815433b72a531dc9fdb" kindref="member">E</ref>[1][ind_t][idx]<sp/>=<sp/>fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[1][i][j][k]<sp/>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a2f6961e4eeb07815433b72a531dc9fdb" kindref="member">E</ref>[2][ind_t][idx]<sp/>=<sp/>fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[2][i][j][k]<sp/>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a52fd332eb5071a892ab296d1d5782934" kindref="member">B</ref>[0][ind_t][idx]<sp/>=<sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j][k]<sp/>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a52fd332eb5071a892ab296d1d5782934" kindref="member">B</ref>[1][ind_t][idx]<sp/>=<sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j][k]<sp/>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fields_t_s-&gt;<ref refid="structfields__time__space_1a52fd332eb5071a892ab296d1d5782934" kindref="member">B</ref>[2][ind_t][idx]<sp/>=<sp/>B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j][k]<sp/>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1a4717e28d84e28bb9fc7a24e872e63fa2" kindref="member">reset_rms_k</ref>(<ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref>*<sp/>rms){</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>rms-&gt;<ref refid="structroot__mean__sqr_1ade6d0a29e41de443af450a2c325661cc" kindref="member">meansqr</ref><sp/>=<sp/>0.<sp/>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>rms-&gt;<ref refid="structroot__mean__sqr_1aee0b34958eedeb25d3a2e95cc7d40b16" kindref="member">mean</ref><sp/>=<sp/>0.<sp/>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>NB_DIM==2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1ad76f8ee5b731a56e6c40c4d8abab987b" kindref="member">rms_k</ref>(<ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref>*<sp/>rms,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>G[<ref refid="parameters_8h_1ae86e3ec39013a0b8573f27e9b9a06a9b" kindref="member">len_x_cst</ref>+4][<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>+4]){</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>threadIdx.x<sp/>+<sp/>blockIdx.x*blockDim.x<sp/>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx&lt;<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>){</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>int(idx/<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>idx-i*<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref><sp/>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>+=<sp/>2<sp/>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>+=<sp/>2<sp/>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;rms-&gt;<ref refid="structroot__mean__sqr_1ade6d0a29e41de443af450a2c325661cc" kindref="member">meansqr</ref>,<sp/>G[i][j]*G[i][j]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;rms-&gt;<ref refid="structroot__mean__sqr_1aee0b34958eedeb25d3a2e95cc7d40b16" kindref="member">mean</ref>,<sp/>G[i][j]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>NB_DIM==3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1ad76f8ee5b731a56e6c40c4d8abab987b" kindref="member">rms_k</ref>(<ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref>*<sp/>rms,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>G[<ref refid="parameters_8h_1ae86e3ec39013a0b8573f27e9b9a06a9b" kindref="member">len_x_cst</ref>+4][<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>+4][<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>+4]){</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>threadIdx.x<sp/>+<sp/>blockIdx.x*blockDim.x<sp/>;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx&lt;<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>){</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>floorf(idx/(<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>*<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>))<sp/>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>floorf(idx-i*(<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>*<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>))/<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref><sp/>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>idx-i*(<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>*<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>)-j*<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref><sp/>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>+=<sp/>2<sp/>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>+=<sp/>2<sp/>;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k<sp/>+=<sp/>2<sp/>;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;rms-&gt;<ref refid="structroot__mean__sqr_1ade6d0a29e41de443af450a2c325661cc" kindref="member">meansqr</ref>,<sp/>G[i][j][k]*G[i][j][k]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atomicAdd(&amp;rms-&gt;<ref refid="structroot__mean__sqr_1aee0b34958eedeb25d3a2e95cc7d40b16" kindref="member">mean</ref>,<sp/>G[i][j][k]/<ref refid="parameters_8h_1ad2d175f44d2f8eefd4f8f1413f860d46" kindref="member">nb_nodes_cst</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1a07192e3bfeb5b2132f6d3a99a9038151" kindref="member">sum_rms_k</ref>(<ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref>*<sp/>rms,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>G[<ref refid="parameters_8h_1a950233f4dbddd80d1d401a3e0e141e03" kindref="member">nb_it_max_cst</ref>],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx_save){</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/>G[idx_save]<sp/>=<sp/>sqrt(rms-&gt;<ref refid="structroot__mean__sqr_1ade6d0a29e41de443af450a2c325661cc" kindref="member">meansqr</ref><sp/>+<sp/>rms-&gt;<ref refid="structroot__mean__sqr_1aee0b34958eedeb25d3a2e95cc7d40b16" kindref="member">mean</ref>*rms-&gt;<ref refid="structroot__mean__sqr_1aee0b34958eedeb25d3a2e95cc7d40b16" kindref="member">mean</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/>rms-&gt;<ref refid="structroot__mean__sqr_1ade6d0a29e41de443af450a2c325661cc" kindref="member">meansqr</ref><sp/>=<sp/>0.<sp/>;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>rms-&gt;<ref refid="structroot__mean__sqr_1aee0b34958eedeb25d3a2e95cc7d40b16" kindref="member">mean</ref><sp/>=<sp/>0.<sp/>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1a6a5dc55fad40b3527e7727305466fb98" kindref="member">reset_state_solver_k</ref>(<ref refid="structstate__solver" kindref="compound">state_solver</ref>*<sp/>sta_sol){</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>sta_sol-&gt;<ref refid="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" kindref="member">breakSolver</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>false<sp/>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/>sta_sol-&gt;<ref refid="structstate__solver_1ab3a03ed18e9e51da616d492f19c0da84" kindref="member">invalidB</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>false<sp/>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>sta_sol-&gt;<ref refid="structstate__solver_1ab518e9c5f1af4ac82ddd9fced242c569" kindref="member">invalidE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>false<sp/>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>sta_sol-&gt;<ref refid="structstate__solver_1aadda2d60d1e7c5d8bcd2c3d37c2b3b55" kindref="member">invalidDens</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>false<sp/>;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>sta_sol-&gt;<ref refid="structstate__solver_1aad95daf9432d799fcc429b39e7ad1b4b" kindref="member">invalidCurr</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>false<sp/>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>sta_sol-&gt;<ref refid="structstate__solver_1a57a8652fa9574297625682296065b4a2" kindref="member">invalidCurrTot</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>false<sp/>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>sta_sol-&gt;<ref refid="structstate__solver_1ae2555d71fe5e599abe6aa1dc435880e5" kindref="member">invalid_new_part_idx</ref><sp/>=<sp/>false<sp/>;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1a0bc81379cf42fc752907587135530691" kindref="member">check_grids_k</ref>(<ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref>*<sp/>B,<sp/><ref refid="structsimu__fields" kindref="compound">simu_fields</ref>*<sp/>fields,<sp/><ref refid="structstate__solver" kindref="compound">state_solver</ref>*<sp/>staSol,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indIt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbNode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tag,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP){</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>threadIdx.x<sp/>+<sp/>blockIdx.x*blockDim.x<sp/>;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(idx<sp/>&lt;<sp/>nbNode){</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>NB_DIM==2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>floorf(idx/(<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>+4))<sp/>;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>idx-i*(<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>+4)<sp/>;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;%i,<sp/>%i,<sp/>%i,<sp/>%.4e\n&quot;,<sp/>idx,<sp/>i,<sp/>j,<sp/>fields-&gt;densNum[i][j])<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j]!=B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j])<sp/>||</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j]!=B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j])<sp/>||</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j]!=B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j])){</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>B<sp/>contains<sp/>a<sp/>nan<sp/>value<sp/>at<sp/>(%i,<sp/>%i,<sp/>%i)<sp/>(checkGrids_k)\n&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indIt,<sp/>tag,<sp/>i,<sp/>j,<sp/>k)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1ab3a03ed18e9e51da616d492f19c0da84" kindref="member">invalidB</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" kindref="member">breakSolver</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[0][i][j]!=fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[0][i][j])<sp/>||</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[1][i][j]!=fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[1][i][j])<sp/>||</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[2][i][j]!=fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[2][i][j])){</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>E<sp/>contains<sp/>a<sp/>nan<sp/>value<sp/>at<sp/>(%i,<sp/>%i)<sp/>(checkGrids_k)\n&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>indIt,<sp/>tag,<sp/>i,<sp/>j)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1ab518e9c5f1af4ac82ddd9fced242c569" kindref="member">invalidE</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" kindref="member">breakSolver</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(fields-&gt;<ref refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" kindref="member">J_tot</ref>[0][i][j]!=fields-&gt;<ref refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" kindref="member">J_tot</ref>[0][i][j])<sp/>||</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fields-&gt;<ref refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" kindref="member">J_tot</ref>[1][i][j]!=fields-&gt;<ref refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" kindref="member">J_tot</ref>[1][i][j])<sp/>||</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fields-&gt;<ref refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" kindref="member">J_tot</ref>[2][i][j]!=fields-&gt;<ref refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" kindref="member">J_tot</ref>[2][i][j])){</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>currTot<sp/>contains<sp/>a<sp/>nan<sp/>value<sp/>at<sp/>(%i,<sp/>%i,<sp/>%i)<sp/>(checkGrids_k)\n&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indIt,<sp/>tag,<sp/>i,<sp/>j,<sp/>k)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1a57a8652fa9574297625682296065b4a2" kindref="member">invalidCurrTot</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" kindref="member">breakSolver</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(fields-&gt;<ref refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" kindref="member">fluxNum</ref>[0][i][j]!=fields-&gt;<ref refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" kindref="member">fluxNum</ref>[0][i][j])<sp/>||</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fields-&gt;<ref refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" kindref="member">fluxNum</ref>[1][i][j]!=fields-&gt;<ref refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" kindref="member">fluxNum</ref>[1][i][j])<sp/>||</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fields-&gt;<ref refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" kindref="member">fluxNum</ref>[2][i][j]!=fields-&gt;<ref refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" kindref="member">fluxNum</ref>[2][i][j])){</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>curr<sp/>contains<sp/>a<sp/>nan<sp/>value<sp/>at<sp/>(%i,<sp/>%i,<sp/>%i)<sp/>(checkGrids_k)\n&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indIt,<sp/>tag,<sp/>i,<sp/>j,<sp/>k)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1aad95daf9432d799fcc429b39e7ad1b4b" kindref="member">invalidCurr</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" kindref="member">breakSolver</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((fields-&gt;<ref refid="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" kindref="member">density</ref>[i][j]&lt;=0)<sp/>||<sp/>(fields-&gt;<ref refid="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" kindref="member">density</ref>[i][j]<sp/>!=<sp/>fields-&gt;<ref refid="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" kindref="member">density</ref>[i][j])){</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>densNum<sp/>contains<sp/>a<sp/>value<sp/>&lt;=<sp/>0<sp/>or<sp/>a<sp/>nan<sp/>value<sp/>at<sp/>(%i,<sp/>%i)<sp/>%.2e.<sp/>(checkGrids_k)\n&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>indIt,<sp/>tag,<sp/>i,<sp/>j,<sp/>fields-&gt;density[i][j])<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1aadda2d60d1e7c5d8bcd2c3d37c2b3b55" kindref="member">invalidDens</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" kindref="member">breakSolver</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#elif<sp/>NB_DIM==3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>floorf(<sp/>idx/((<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>+4)*(<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>+4))<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>floorf(<sp/>idx<sp/>-<sp/>i*((<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>+4)*(<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>+4))<sp/>)/(<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>+4)<sp/>;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>idx<sp/>-<sp/>i*((<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>+4)*(<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>+4))-j*(<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>+4)<sp/>;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;%i,<sp/>%i,<sp/>%i,<sp/>%.4e\n&quot;,<sp/>idx,<sp/>i,<sp/>j,<sp/>fields-&gt;densNum[i][j][k])<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j][k]!=B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[0][i][j][k])<sp/>||</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j][k]!=B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[1][i][j][k])<sp/>||</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j][k]!=B-&gt;<ref refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" kindref="member">B</ref>[2][i][j][k])){</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>B<sp/>contains<sp/>a<sp/>nan<sp/>value<sp/>at<sp/>(%i,<sp/>%i,<sp/>%i)<sp/>(checkGrids_k)\n&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indIt,<sp/>tag,<sp/>i,<sp/>j,<sp/>k)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1ab3a03ed18e9e51da616d492f19c0da84" kindref="member">invalidB</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" kindref="member">breakSolver</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[0][i][j][k]!=fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[0][i][j][k])<sp/>||</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[1][i][j][k]!=fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[1][i][j][k])<sp/>||</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[2][i][j][k]!=fields-&gt;<ref refid="structsimu__fields_1ab9a7e145f3ad6cde4d2a6bef96e6acf9" kindref="member">E</ref>[2][i][j][k])){</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>E<sp/>contains<sp/>a<sp/>nan<sp/>value<sp/>at<sp/>(%i,<sp/>%i)<sp/>(checkGrids_k)\n&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>indIt,<sp/>tag,<sp/>i,<sp/>j)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1ab518e9c5f1af4ac82ddd9fced242c569" kindref="member">invalidE</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" kindref="member">breakSolver</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(fields-&gt;<ref refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" kindref="member">J_tot</ref>[0][i][j][k]!=fields-&gt;<ref refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" kindref="member">J_tot</ref>[0][i][j][k])<sp/>||</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fields-&gt;<ref refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" kindref="member">J_tot</ref>[1][i][j][k]!=fields-&gt;<ref refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" kindref="member">J_tot</ref>[1][i][j][k])<sp/>||</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fields-&gt;<ref refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" kindref="member">J_tot</ref>[2][i][j][k]!=fields-&gt;<ref refid="structsimu__fields_1ad345a079684673e938623872fe7ca941" kindref="member">J_tot</ref>[2][i][j][k])){</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>currTot<sp/>contains<sp/>a<sp/>nan<sp/>value<sp/>at<sp/>(%i,<sp/>%i,<sp/>%i)<sp/>(checkGrids_k)\n&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indIt,<sp/>tag,<sp/>i,<sp/>j,<sp/>k)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1a57a8652fa9574297625682296065b4a2" kindref="member">invalidCurrTot</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" kindref="member">breakSolver</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(fields-&gt;<ref refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" kindref="member">fluxNum</ref>[0][i][j][k]!=fields-&gt;<ref refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" kindref="member">fluxNum</ref>[0][i][j][k])<sp/>||</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fields-&gt;<ref refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" kindref="member">fluxNum</ref>[1][i][j][k]!=fields-&gt;<ref refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" kindref="member">fluxNum</ref>[1][i][j][k])<sp/>||</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fields-&gt;<ref refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" kindref="member">fluxNum</ref>[2][i][j][k]!=fields-&gt;<ref refid="structsimu__fields_1a971caddf4c96f9f68d1ded5a684ca57c" kindref="member">fluxNum</ref>[2][i][j][k])){</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>curr<sp/>contains<sp/>a<sp/>nan<sp/>value<sp/>at<sp/>(%i,<sp/>%i,<sp/>%i)<sp/>(checkGrids_k)\n&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indIt,<sp/>tag,<sp/>i,<sp/>j,<sp/>k)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1aad95daf9432d799fcc429b39e7ad1b4b" kindref="member">invalidCurr</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" kindref="member">breakSolver</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((fields-&gt;<ref refid="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" kindref="member">density</ref>[i][j][k]&lt;=0)<sp/>||<sp/>(fields-&gt;<ref refid="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" kindref="member">density</ref>[i][j][k]<sp/>!=<sp/>fields-&gt;<ref refid="structsimu__fields_1a357d3c29185bb2e18547bff041b7531f" kindref="member">density</ref>[i][j][k])){</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>densNum<sp/>contains<sp/>a<sp/>value<sp/>&lt;=<sp/>0<sp/>or<sp/>a<sp/>nan<sp/>value<sp/>at<sp/>(%i,<sp/>%i)<sp/>%.2e.<sp/>(checkGrids_k)\n&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>indIt,<sp/>tag,<sp/>i,<sp/>j,<sp/>fields-&gt;densNum[i][j][k])<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1aadda2d60d1e7c5d8bcd2c3d37c2b3b55" kindref="member">invalidDens</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staSol-&gt;<ref refid="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" kindref="member">breakSolver</ref><sp/>=<sp/>true<sp/>;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="345"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1ab3c0bfe2e61c65c727fa08156883a0a5" kindref="member">print_sta_sol_k</ref>(<ref refid="structstate__solver" kindref="compound">state_solver</ref>*<sp/>staSol,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indIt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tag){</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(staSol-&gt;<ref refid="structstate__solver_1ab3a03ed18e9e51da616d492f19c0da84" kindref="member">invalidB</ref>){<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>invalid<sp/>B-field.\n&quot;</highlight><highlight class="normal">,<sp/>indIt,<sp/>tag)<sp/>;<sp/>}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(staSol-&gt;<ref refid="structstate__solver_1ab518e9c5f1af4ac82ddd9fced242c569" kindref="member">invalidE</ref>){<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>invalid<sp/>E-field.\n&quot;</highlight><highlight class="normal">,<sp/>indIt,<sp/>tag)<sp/>;<sp/>}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(staSol-&gt;<ref refid="structstate__solver_1aadda2d60d1e7c5d8bcd2c3d37c2b3b55" kindref="member">invalidDens</ref>){<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>invalid<sp/>density.\n&quot;</highlight><highlight class="normal">,<sp/>indIt,<sp/>tag)<sp/>;<sp/>}</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(staSol-&gt;<ref refid="structstate__solver_1aad95daf9432d799fcc429b39e7ad1b4b" kindref="member">invalidCurr</ref>){<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>invalid<sp/>current.\n&quot;</highlight><highlight class="normal">,<sp/>indIt,<sp/>tag)<sp/>;<sp/>}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(staSol-&gt;<ref refid="structstate__solver_1a57a8652fa9574297625682296065b4a2" kindref="member">invalidCurrTot</ref>){<sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>invalid<sp/>total<sp/>current.\n&quot;</highlight><highlight class="normal">,<sp/>indIt,<sp/>tag)<sp/>;<sp/>}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(staSol-&gt;<ref refid="structstate__solver_1ae2555d71fe5e599abe6aa1dc435880e5" kindref="member">invalid_new_part_idx</ref>){<sp/>printf(</highlight><highlight class="stringliteral">&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>invalid<sp/>index<sp/>for<sp/>new<sp/>particle(s).\n&quot;</highlight><highlight class="normal">,<sp/>indIt,<sp/>tag)<sp/>;<sp/>}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(staSol-&gt;breakSolver){<sp/>printf(&quot;|<sp/>it<sp/>%i,<sp/>tag<sp/>%i,<sp/>I&apos;m<sp/>sorry<sp/>what?\n&quot;,<sp/>indIt,<sp/>tag)<sp/>;<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1adb6678b66a6f5b6dbe393a62cacaaff5" kindref="member">HK_run_time_k</ref>(<ref refid="structhouse__keeping" kindref="compound">house_keeping</ref>*<sp/>HK,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx_save,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>run_time){</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/>HK-&gt;<ref refid="structhouse__keeping_1ac9cf4b4247a643daa5df3352022bd519" kindref="member">simuTime</ref>[idx_save]<sp/>=<sp/>t<sp/>;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/>HK-&gt;<ref refid="structhouse__keeping_1acee5fa20286349e2e3c396744f52c003" kindref="member">runTime</ref>[idx_save]<sp/>=<sp/>run_time<sp/>;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1a66e6d55834d7a97a06998afee02fd6cd" kindref="member">HK_nb_part_send_down_k</ref>(<ref refid="structhouse__keeping" kindref="compound">house_keeping</ref>*<sp/>h_k,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_part_send,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx_save){</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/>h_k-&gt;<ref refid="structhouse__keeping_1a5616827df0384f15bf5894be6a18a55a" kindref="member">nb_part_comm_up</ref>[idx_save]<sp/>=<sp/>nb_part_send<sp/>;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernels__HK_8cuh_1a2c74ce668dba9c4f4b7784e42f1dd401" kindref="member">HK_nb_part_send_up_k</ref>(<ref refid="structhouse__keeping" kindref="compound">house_keeping</ref>*<sp/>h_k,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_part_send,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx_save){</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/>h_k-&gt;<ref refid="structhouse__keeping_1a136d017f89cf134a87068d25c2da7523" kindref="member">nb_part_comm_down</ref>[idx_save]<sp/>=<sp/>nb_part_send<sp/>;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight><highlight class="comment">//__________________________________________________________________________________________________________________</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/etienneb/Models/Menura/menura/src/kernels_HK.cuh"/>
+  </compounddef>
+</doxygen>

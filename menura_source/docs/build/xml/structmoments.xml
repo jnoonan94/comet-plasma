@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structmoments" kind="struct" language="C++" prot="public">
+    <compoundname>moments</compoundname>
+    <includes refid="structures_8h" local="no">structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmoments_1a002420b624f4eeaec8a04e6d52bb626b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float moments::E_mag[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>E_mag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="228" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoments_1a2dbd8e87b451da035269d77f84edffc0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float moments::E_elec[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>E_elec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="229" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoments_1a92956e216df11edee4ced5d26a5b60ca" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float moments::E_kin[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>E_kin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="230" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoments_1a8c155cd48b926d215a59c8114d8acef1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float moments::B_mean[3][len_save_t_cst]</definition>
+        <argsstring>[3][len_save_t_cst]</argsstring>
+        <name>B_mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="231" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoments_1a568f0a8ed8594f15c625abd5bcd0e7eb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float moments::B_var[3][len_save_t_cst]</definition>
+        <argsstring>[3][len_save_t_cst]</argsstring>
+        <name>B_var</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="232" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoments_1ae388953ccf5135df9752f3616f417e83" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float moments::dens_tot[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>dens_tot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="233" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoments_1a7e674e30f5f68886ed75b40ac2c8781e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float moments::vel_tot[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>vel_tot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="234" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoments_1a2deef4654def80850fcf4340cc12794c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float moments::Ji_mean[3][len_save_t_cst]</definition>
+        <argsstring>[3][len_save_t_cst]</argsstring>
+        <name>Ji_mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="235" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float moments::vel_part[3][len_save_t_cst]</definition>
+        <argsstring>[3][len_save_t_cst]</argsstring>
+        <name>vel_part</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="236" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoments_1adea9105aa85e7324477e87f8ca5a88f4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float moments::vel_th_part[3][len_save_t_cst]</definition>
+        <argsstring>[3][len_save_t_cst]</argsstring>
+        <name>vel_th_part</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="237" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoments_1a83325cdcdef667eb5ea8c87c910abd01" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float moments::temp_tot[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>temp_tot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="238" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoments_1a33270f9bb00ddb5aae2576848a5c9dac" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int moments::nb_part_tot[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>nb_part_tot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="239" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="227" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="227" bodyend="240"/>
+    <listofallmembers>
+      <member refid="structmoments_1a8c155cd48b926d215a59c8114d8acef1" prot="public" virt="non-virtual"><scope>moments</scope><name>B_mean</name></member>
+      <member refid="structmoments_1a568f0a8ed8594f15c625abd5bcd0e7eb" prot="public" virt="non-virtual"><scope>moments</scope><name>B_var</name></member>
+      <member refid="structmoments_1ae388953ccf5135df9752f3616f417e83" prot="public" virt="non-virtual"><scope>moments</scope><name>dens_tot</name></member>
+      <member refid="structmoments_1a2dbd8e87b451da035269d77f84edffc0" prot="public" virt="non-virtual"><scope>moments</scope><name>E_elec</name></member>
+      <member refid="structmoments_1a92956e216df11edee4ced5d26a5b60ca" prot="public" virt="non-virtual"><scope>moments</scope><name>E_kin</name></member>
+      <member refid="structmoments_1a002420b624f4eeaec8a04e6d52bb626b" prot="public" virt="non-virtual"><scope>moments</scope><name>E_mag</name></member>
+      <member refid="structmoments_1a2deef4654def80850fcf4340cc12794c" prot="public" virt="non-virtual"><scope>moments</scope><name>Ji_mean</name></member>
+      <member refid="structmoments_1a33270f9bb00ddb5aae2576848a5c9dac" prot="public" virt="non-virtual"><scope>moments</scope><name>nb_part_tot</name></member>
+      <member refid="structmoments_1a83325cdcdef667eb5ea8c87c910abd01" prot="public" virt="non-virtual"><scope>moments</scope><name>temp_tot</name></member>
+      <member refid="structmoments_1a83d7e68b9df8051e515c9efb4e872b50" prot="public" virt="non-virtual"><scope>moments</scope><name>vel_part</name></member>
+      <member refid="structmoments_1adea9105aa85e7324477e87f8ca5a88f4" prot="public" virt="non-virtual"><scope>moments</scope><name>vel_th_part</name></member>
+      <member refid="structmoments_1a7e674e30f5f68886ed75b40ac2c8781e" prot="public" virt="non-virtual"><scope>moments</scope><name>vel_tot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

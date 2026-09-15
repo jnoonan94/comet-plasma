@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structroot__mean__sqr" kind="struct" language="C++" prot="public">
+    <compoundname>root_mean_sqr</compoundname>
+    <includes refid="structures_8h" local="no">structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structroot__mean__sqr_1ade6d0a29e41de443af450a2c325661cc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float root_mean_sqr::meansqr</definition>
+        <argsstring></argsstring>
+        <name>meansqr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="247" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structroot__mean__sqr_1aee0b34958eedeb25d3a2e95cc7d40b16" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float root_mean_sqr::mean</definition>
+        <argsstring></argsstring>
+        <name>mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="248" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structroot__mean__sqr_1ae12960930082f089fdc30e8619cd252c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float root_mean_sqr::B[3][len_save_t_cst]</definition>
+        <argsstring>[3][len_save_t_cst]</argsstring>
+        <name>B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="249" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structroot__mean__sqr_1aaf9f09f2c54bbcef2f2e1c2519807bc4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float root_mean_sqr::E[3][len_save_t_cst]</definition>
+        <argsstring>[3][len_save_t_cst]</argsstring>
+        <name>E</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="250" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structroot__mean__sqr_1a63db45a56aa4c08ee5181ac1d77d261a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float root_mean_sqr::Ji[3][len_save_t_cst]</definition>
+        <argsstring>[3][len_save_t_cst]</argsstring>
+        <name>Ji</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="251" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structroot__mean__sqr_1a5a77d239458cea300a14a39f5bbadab6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float root_mean_sqr::J_tot[3][len_save_t_cst]</definition>
+        <argsstring>[3][len_save_t_cst]</argsstring>
+        <name>J_tot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="252" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structroot__mean__sqr_1ab9c142116a867baa316879acbd652f3c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float root_mean_sqr::vort[3][len_save_t_cst]</definition>
+        <argsstring>[3][len_save_t_cst]</argsstring>
+        <name>vort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="253" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="246" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="246" bodyend="254"/>
+    <listofallmembers>
+      <member refid="structroot__mean__sqr_1ae12960930082f089fdc30e8619cd252c" prot="public" virt="non-virtual"><scope>root_mean_sqr</scope><name>B</name></member>
+      <member refid="structroot__mean__sqr_1aaf9f09f2c54bbcef2f2e1c2519807bc4" prot="public" virt="non-virtual"><scope>root_mean_sqr</scope><name>E</name></member>
+      <member refid="structroot__mean__sqr_1a5a77d239458cea300a14a39f5bbadab6" prot="public" virt="non-virtual"><scope>root_mean_sqr</scope><name>J_tot</name></member>
+      <member refid="structroot__mean__sqr_1a63db45a56aa4c08ee5181ac1d77d261a" prot="public" virt="non-virtual"><scope>root_mean_sqr</scope><name>Ji</name></member>
+      <member refid="structroot__mean__sqr_1aee0b34958eedeb25d3a2e95cc7d40b16" prot="public" virt="non-virtual"><scope>root_mean_sqr</scope><name>mean</name></member>
+      <member refid="structroot__mean__sqr_1ade6d0a29e41de443af450a2c325661cc" prot="public" virt="non-virtual"><scope>root_mean_sqr</scope><name>meansqr</name></member>
+      <member refid="structroot__mean__sqr_1ab9c142116a867baa316879acbd652f3c" prot="public" virt="non-virtual"><scope>root_mean_sqr</scope><name>vort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structsimu__param" kind="struct" language="C++" prot="public">
+    <compoundname>simu_param</compoundname>
+    <includes refid="parameters_8h" local="no">parameters.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsimu__param_1a3e5313ca35d37f7bb64af2331c4e0d83" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::dX</definition>
+        <argsstring></argsstring>
+        <name>dX</name>
+        <initializer>= 1.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="106" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a9c733c9b060e2f5a955a00d14d6f925b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::dt</definition>
+        <argsstring></argsstring>
+        <name>dt</name>
+        <initializer>= 0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="107" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ad21e29c2c23eb8b5b42121454253d77a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::n0_no_norm</definition>
+        <argsstring></argsstring>
+        <name>n0_no_norm</name>
+        <initializer>= 1.e6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="111" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::B0_no_norm</definition>
+        <argsstring></argsstring>
+        <name>B0_no_norm</name>
+        <initializer>= 2.5<ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>-9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="112" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ab1cdcdb047528029986a5fabb4911122" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::v0</definition>
+        <argsstring></argsstring>
+        <name>v0</name>
+        <initializer>= 0.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="113" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a7bb0dd153f8e7b59aca4cc7594a83bf4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::E0</definition>
+        <argsstring></argsstring>
+        <name>E0</name>
+        <initializer>= -<ref refid="structsimu__param_1ab1cdcdb047528029986a5fabb4911122" kindref="member">v0</ref>*<ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="114" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ae1095da4df42f39de030943f16dea621" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::beta</definition>
+        <argsstring></argsstring>
+        <name>beta</name>
+        <initializer>= 1.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="115" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a28f6202f8e9fa9e24fe6cc48b8b3fe43" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::Ti_inf</definition>
+        <argsstring></argsstring>
+        <name>Ti_inf</name>
+        <initializer>= <ref refid="structsimu__param_1ae1095da4df42f39de030943f16dea621" kindref="member">beta</ref>*<ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref>*<ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref>/(<ref refid="structsimu__param_1ad21e29c2c23eb8b5b42121454253d77a" kindref="member">n0_no_norm</ref>*<ref refid="parameters_8h_1a357020be5fadd3d08f84a01f52cb7177" kindref="member">k_B</ref>*2.*<ref refid="parameters_8h_1a99d716f85818a6add1e7cb30db52d674" kindref="member">mu0</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="116" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ad19dbf51b38e9ca6c6ec75738b8df124" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::Te_inf</definition>
+        <argsstring></argsstring>
+        <name>Te_inf</name>
+        <initializer>= 1.*<ref refid="structsimu__param_1a28f6202f8e9fa9e24fe6cc48b8b3fe43" kindref="member">Ti_inf</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="117" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a8a0ae3ae9abf188a1498289126b4652d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::e_mot</definition>
+        <argsstring></argsstring>
+        <name>e_mot</name>
+        <initializer>= 1.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="121" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a02b1b7c1ed41a84619c3e04b4417ff99" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::e_hal</definition>
+        <argsstring></argsstring>
+        <name>e_hal</name>
+        <initializer>= 1.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="122" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a9a61ec7055749e2e810bd7e302985f5e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::e_amb</definition>
+        <argsstring></argsstring>
+        <name>e_amb</name>
+        <initializer>= 1.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="123" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a263c8b883030a64337e4b25f88581df0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::poly_ind</definition>
+        <argsstring></argsstring>
+        <name>poly_ind</name>
+        <initializer>= 1.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="125" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a573d89bd2dc0e0922b37f35c99966b75" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::eta_res_norm</definition>
+        <argsstring></argsstring>
+        <name>eta_res_norm</name>
+        <initializer>= 0.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="126" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a2bd2cbd31725c47dfcd40acb44cb7f4d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::eta_hyp_res</definition>
+        <argsstring></argsstring>
+        <name>eta_hyp_res</name>
+        <initializer>= 1.<ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>-2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="127" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a31780e161ad2f33f5856a78f32492b1a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::eta_res_vac</definition>
+        <argsstring></argsstring>
+        <name>eta_res_vac</name>
+        <initializer>= 1.e1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="128" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ae35407cadf2f5e86960b3f1b40d8b2f4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::eta_sm</definition>
+        <argsstring></argsstring>
+        <name>eta_sm</name>
+        <initializer>= 0.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="129" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1afd8b2d216019ba63ca1eae956eb7ecd8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::fluctu_sqrt</definition>
+        <argsstring></argsstring>
+        <name>fluctu_sqrt</name>
+        <initializer>= 0.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="131" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a0674f5a6bef457354bc7896529240a0e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::B0_x</definition>
+        <argsstring></argsstring>
+        <name>B0_x</name>
+        <initializer>= 0.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="133" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a7850dfb5a869e0beffe37960e809f8af" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::B0_y</definition>
+        <argsstring></argsstring>
+        <name>B0_y</name>
+        <initializer>= 0.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="134" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ac1872e61359a70ce71402aae2cdfdd6c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::B0_z</definition>
+        <argsstring></argsstring>
+        <name>B0_z</name>
+        <initializer>= -1.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="135" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1aa23a5b6e3282b671d811a33d652b3bab" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::Q</definition>
+        <argsstring></argsstring>
+        <name>Q</name>
+        <initializer>= 5.e26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="139" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ab7729f105429505573b32ce8dc659e7f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::nu_i</definition>
+        <argsstring></argsstring>
+        <name>nu_i</name>
+        <initializer>= 2.<ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>-7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="140" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a3e246ba6375f5406e1dcd3bf6549aba6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::nu_d</definition>
+        <argsstring></argsstring>
+        <name>nu_d</name>
+        <initializer>= 5.0e-7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="141" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a67322bee5f82cfcb6c7ba9331b38e604" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::u0</definition>
+        <argsstring></argsstring>
+        <name>u0</name>
+        <initializer>= 1000.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="142" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1aec73f1b702faf6eaf36ef143cbeeaf83" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::Z_pla</definition>
+        <argsstring></argsstring>
+        <name>Z_pla</name>
+        <initializer>= 18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="143" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1aa12efbd0a0168a6ccfea5a6242ef28bf" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::centre_x</definition>
+        <argsstring></argsstring>
+        <name>centre_x</name>
+        <initializer>= 5./8.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="144" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1aee78d7b5d090f577ae2ca3e7cd405930" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::centre_y</definition>
+        <argsstring></argsstring>
+        <name>centre_y</name>
+        <initializer>= 1./2.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="145" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1aa58753d1cf0e10621e4b2468bbfa6d4b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::centre_z</definition>
+        <argsstring></argsstring>
+        <name>centre_z</name>
+        <initializer>= 1./2.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="147" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a75ddc8d77fe76cfe8d2cc377433896d6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::dip_mom</definition>
+        <argsstring></argsstring>
+        <name>dip_mom</name>
+        <initializer>= 1.e5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="149" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a26a0bed6795d4859613b379cee83ab2a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::r_obs</definition>
+        <argsstring></argsstring>
+        <name>r_obs</name>
+        <initializer>= 57.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="150" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a13a72849b25f1eca7f9c8a2584efd1db" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::omega_i</definition>
+        <argsstring></argsstring>
+        <name>omega_i</name>
+        <initializer>= std::sqrt(<ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>*<ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>*<ref refid="structsimu__param_1ad21e29c2c23eb8b5b42121454253d77a" kindref="member">n0_no_norm</ref>/(<ref refid="parameters_8h_1a4621da63f6eba48178b2811b76188e26" kindref="member">eps0</ref>*<ref refid="parameters_8h_1ae9ddcfc75c11ae51430fffe6b06253c6" kindref="member">m_i</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="154" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1af9b4e4c078d5ab4845de8dbeaf3dc113" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::omega_ci</definition>
+        <argsstring></argsstring>
+        <name>omega_ci</name>
+        <initializer>= <ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>*<ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref>/<ref refid="parameters_8h_1ae9ddcfc75c11ae51430fffe6b06253c6" kindref="member">m_i</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="155" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a967c6c7c2d7f342151d89205965ef51c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::v_A</definition>
+        <argsstring></argsstring>
+        <name>v_A</name>
+        <initializer>= <ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref>/std::sqrt(<ref refid="parameters_8h_1a99d716f85818a6add1e7cb30db52d674" kindref="member">mu0</ref>*<ref refid="parameters_8h_1ae9ddcfc75c11ae51430fffe6b06253c6" kindref="member">m_i</ref>*<ref refid="structsimu__param_1ad21e29c2c23eb8b5b42121454253d77a" kindref="member">n0_no_norm</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="156" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1acadfe114710671736791c69043bea321" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::t0</definition>
+        <argsstring></argsstring>
+        <name>t0</name>
+        <initializer>= 1/<ref refid="structsimu__param_1af9b4e4c078d5ab4845de8dbeaf3dc113" kindref="member">omega_ci</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="158" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a86961f9e2705eaeca744f7df275ff1a3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::x0</definition>
+        <argsstring></argsstring>
+        <name>x0</name>
+        <initializer>= <ref refid="structsimu__param_1a967c6c7c2d7f342151d89205965ef51c" kindref="member">v_A</ref>/<ref refid="structsimu__param_1af9b4e4c078d5ab4845de8dbeaf3dc113" kindref="member">omega_ci</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="159" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ad5a34343f83f86782e0ef9b22436f96d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::q0</definition>
+        <argsstring></argsstring>
+        <name>q0</name>
+        <initializer>= <ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>*<ref refid="structsimu__param_1ad21e29c2c23eb8b5b42121454253d77a" kindref="member">n0_no_norm</ref>*<ref refid="structsimu__param_1a86961f9e2705eaeca744f7df275ff1a3" kindref="member">x0</ref>*<ref refid="structsimu__param_1a86961f9e2705eaeca744f7df275ff1a3" kindref="member">x0</ref>*<ref refid="structsimu__param_1a86961f9e2705eaeca744f7df275ff1a3" kindref="member">x0</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="160" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a1def8df6385edf2a3ce7a00456586711" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::m0</definition>
+        <argsstring></argsstring>
+        <name>m0</name>
+        <initializer>= <ref refid="parameters_8h_1ae9ddcfc75c11ae51430fffe6b06253c6" kindref="member">m_i</ref>*<ref refid="structsimu__param_1ad21e29c2c23eb8b5b42121454253d77a" kindref="member">n0_no_norm</ref>*<ref refid="structsimu__param_1a86961f9e2705eaeca744f7df275ff1a3" kindref="member">x0</ref>*<ref refid="structsimu__param_1a86961f9e2705eaeca744f7df275ff1a3" kindref="member">x0</ref>*<ref refid="structsimu__param_1a86961f9e2705eaeca744f7df275ff1a3" kindref="member">x0</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="161" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1af68d1cdd2dee06cb694581fd3b8b4c54" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::p0</definition>
+        <argsstring></argsstring>
+        <name>p0</name>
+        <initializer>= <ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref>*<ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref>/(2.*<ref refid="parameters_8h_1a99d716f85818a6add1e7cb30db52d674" kindref="member">mu0</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="162" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a6c8490dc67cd75032eb19f41076ffa3f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::d_i</definition>
+        <argsstring></argsstring>
+        <name>d_i</name>
+        <initializer>= <ref refid="parameters_8h_1a2bdf6e6844e5dfb6d0976e6d7e17abe0" kindref="member">c</ref>/<ref refid="structsimu__param_1a13a72849b25f1eca7f9c8a2584efd1db" kindref="member">omega_i</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="164" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a4b0a2a4b326166153e1d58e726fc9c92" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::omega_e</definition>
+        <argsstring></argsstring>
+        <name>omega_e</name>
+        <initializer>= std::sqrt(<ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>*<ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>*<ref refid="structsimu__param_1ad21e29c2c23eb8b5b42121454253d77a" kindref="member">n0_no_norm</ref>/(<ref refid="parameters_8h_1a4621da63f6eba48178b2811b76188e26" kindref="member">eps0</ref>*<ref refid="parameters_8h_1af0d07747c6284ec4a64a52731c01dddd" kindref="member">m_e</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="165" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a621819ff569c2e7ec93efb6de9a6e78c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::omega_ce</definition>
+        <argsstring></argsstring>
+        <name>omega_ce</name>
+        <initializer>= <ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>*<ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref>/<ref refid="parameters_8h_1af0d07747c6284ec4a64a52731c01dddd" kindref="member">m_e</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="166" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a8ba743d7e509ff9538c77a3fd4e18d93" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::d_e</definition>
+        <argsstring></argsstring>
+        <name>d_e</name>
+        <initializer>= <ref refid="parameters_8h_1a2bdf6e6844e5dfb6d0976e6d7e17abe0" kindref="member">c</ref>/<ref refid="structsimu__param_1a4b0a2a4b326166153e1d58e726fc9c92" kindref="member">omega_e</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="167" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a4330a066a84069b77993abe0eb57f42d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::v_thi</definition>
+        <argsstring></argsstring>
+        <name>v_thi</name>
+        <initializer>= std::sqrt(2.*<ref refid="parameters_8h_1a357020be5fadd3d08f84a01f52cb7177" kindref="member">k_B</ref>*<ref refid="structsimu__param_1a28f6202f8e9fa9e24fe6cc48b8b3fe43" kindref="member">Ti_inf</ref>/<ref refid="parameters_8h_1ae9ddcfc75c11ae51430fffe6b06253c6" kindref="member">m_i</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="168" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a5499004355258d0085e4d63c0f898e2d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::v_the</definition>
+        <argsstring></argsstring>
+        <name>v_the</name>
+        <initializer>= std::sqrt(2.*<ref refid="parameters_8h_1a357020be5fadd3d08f84a01f52cb7177" kindref="member">k_B</ref>*<ref refid="structsimu__param_1ad19dbf51b38e9ca6c6ec75738b8df124" kindref="member">Te_inf</ref>/<ref refid="parameters_8h_1af0d07747c6284ec4a64a52731c01dddd" kindref="member">m_e</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="169" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a0877d06fb6a7f2e9f90b5acd9fb7c65e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::v_s</definition>
+        <argsstring></argsstring>
+        <name>v_s</name>
+        <initializer>= std::sqrt(<ref refid="parameters_8h_1a357020be5fadd3d08f84a01f52cb7177" kindref="member">k_B</ref>*(<ref refid="structsimu__param_1ad19dbf51b38e9ca6c6ec75738b8df124" kindref="member">Te_inf</ref>+3*<ref refid="structsimu__param_1a28f6202f8e9fa9e24fe6cc48b8b3fe43" kindref="member">Ti_inf</ref>)/<ref refid="parameters_8h_1ae9ddcfc75c11ae51430fffe6b06253c6" kindref="member">m_i</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="170" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1abe4645635ccca35655739e535a4867cb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::v_ms</definition>
+        <argsstring></argsstring>
+        <name>v_ms</name>
+        <initializer>= std::sqrt(<ref refid="parameters_8h_1a2bdf6e6844e5dfb6d0976e6d7e17abe0" kindref="member">c</ref>*<ref refid="parameters_8h_1a2bdf6e6844e5dfb6d0976e6d7e17abe0" kindref="member">c</ref>*(<ref refid="structsimu__param_1a967c6c7c2d7f342151d89205965ef51c" kindref="member">v_A</ref>*<ref refid="structsimu__param_1a967c6c7c2d7f342151d89205965ef51c" kindref="member">v_A</ref>+<ref refid="structsimu__param_1a0877d06fb6a7f2e9f90b5acd9fb7c65e" kindref="member">v_s</ref>*<ref refid="structsimu__param_1a0877d06fb6a7f2e9f90b5acd9fb7c65e" kindref="member">v_s</ref>)/(<ref refid="structsimu__param_1a967c6c7c2d7f342151d89205965ef51c" kindref="member">v_A</ref>*<ref refid="structsimu__param_1a967c6c7c2d7f342151d89205965ef51c" kindref="member">v_A</ref>+<ref refid="parameters_8h_1a2bdf6e6844e5dfb6d0976e6d7e17abe0" kindref="member">c</ref>*<ref refid="parameters_8h_1a2bdf6e6844e5dfb6d0976e6d7e17abe0" kindref="member">c</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="171" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ada9dd8ec10da8f783ac1237bc7c09498" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::lambda_D</definition>
+        <argsstring></argsstring>
+        <name>lambda_D</name>
+        <initializer>= std::sqrt(<ref refid="parameters_8h_1a4621da63f6eba48178b2811b76188e26" kindref="member">eps0</ref>*<ref refid="parameters_8h_1a357020be5fadd3d08f84a01f52cb7177" kindref="member">k_B</ref>*<ref refid="structsimu__param_1ad19dbf51b38e9ca6c6ec75738b8df124" kindref="member">Te_inf</ref>/(<ref refid="structsimu__param_1ad21e29c2c23eb8b5b42121454253d77a" kindref="member">n0_no_norm</ref>*<ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>*<ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="172" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ab92e2cc4aec33b4bfc012168acc9b8bb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::Beta_p</definition>
+        <argsstring></argsstring>
+        <name>Beta_p</name>
+        <initializer>= 2*<ref refid="parameters_8h_1a99d716f85818a6add1e7cb30db52d674" kindref="member">mu0</ref>*<ref refid="structsimu__param_1ad21e29c2c23eb8b5b42121454253d77a" kindref="member">n0_no_norm</ref>*<ref refid="parameters_8h_1a357020be5fadd3d08f84a01f52cb7177" kindref="member">k_B</ref>*<ref refid="structsimu__param_1a28f6202f8e9fa9e24fe6cc48b8b3fe43" kindref="member">Ti_inf</ref>/(<ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref>*<ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="173" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ab8ee301b86210657f3d4492cf87dd839" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::Beta_e</definition>
+        <argsstring></argsstring>
+        <name>Beta_e</name>
+        <initializer>= 2*<ref refid="parameters_8h_1a99d716f85818a6add1e7cb30db52d674" kindref="member">mu0</ref>*<ref refid="structsimu__param_1ad21e29c2c23eb8b5b42121454253d77a" kindref="member">n0_no_norm</ref>*<ref refid="parameters_8h_1a357020be5fadd3d08f84a01f52cb7177" kindref="member">k_B</ref>*<ref refid="structsimu__param_1ad19dbf51b38e9ca6c6ec75738b8df124" kindref="member">Te_inf</ref>/(<ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref>*<ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="174" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1af9d3d35fa2cc659813b38309f6a2857e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::v0_com</definition>
+        <argsstring></argsstring>
+        <name>v0_com</name>
+        <initializer>= <ref refid="structsimu__param_1a967c6c7c2d7f342151d89205965ef51c" kindref="member">v_A</ref>*<ref refid="structsimu__param_1a3e5313ca35d37f7bb64af2331c4e0d83" kindref="member">dX</ref>*<ref refid="parameters_8h_1ab5d386ba33baf19b07e1008a79c132d2" kindref="member">nb_cell_per_shift_cst</ref>/(<ref refid="parameters_8h_1a98c2bbfab5b52c9860d922eaf8a64846" kindref="member">nb_it_per_shift_cst</ref>*<ref refid="structsimu__param_1a9c733c9b060e2f5a955a00d14d6f925b" kindref="member">dt</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="176" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ac839a17222cd079bb961fe163510adfa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::v_obs</definition>
+        <argsstring></argsstring>
+        <name>v_obs</name>
+        <initializer>= <ref refid="structsimu__param_1a3e5313ca35d37f7bb64af2331c4e0d83" kindref="member">dX</ref>*<ref refid="parameters_8h_1ab5d386ba33baf19b07e1008a79c132d2" kindref="member">nb_cell_per_shift_cst</ref>/(<ref refid="parameters_8h_1a98c2bbfab5b52c9860d922eaf8a64846" kindref="member">nb_it_per_shift_cst</ref>*<ref refid="structsimu__param_1a9c733c9b060e2f5a955a00d14d6f925b" kindref="member">dt</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="177" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ae71d545471c24525a1cf78576a8cc05d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::R_gyr_norm</definition>
+        <argsstring></argsstring>
+        <name>R_gyr_norm</name>
+        <initializer>= <ref refid="structsimu__param_1aec73f1b702faf6eaf36ef143cbeeaf83" kindref="member">Z_pla</ref>*<ref refid="structsimu__param_1af9d3d35fa2cc659813b38309f6a2857e" kindref="member">v0_com</ref>/<ref refid="structsimu__param_1a967c6c7c2d7f342151d89205965ef51c" kindref="member">v_A</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="178" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a2e37c7081b5e55e25a6d7066d69238ba" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::R_gyr</definition>
+        <argsstring></argsstring>
+        <name>R_gyr</name>
+        <initializer>= <ref refid="structsimu__param_1aec73f1b702faf6eaf36ef143cbeeaf83" kindref="member">Z_pla</ref>*<ref refid="parameters_8h_1ae9ddcfc75c11ae51430fffe6b06253c6" kindref="member">m_i</ref>*<ref refid="structsimu__param_1af9d3d35fa2cc659813b38309f6a2857e" kindref="member">v0_com</ref>/(<ref refid="parameters_8h_1a4225a7492f7d468ad5b985282c8ee7b1" kindref="member">e</ref>*<ref refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" kindref="member">B0_no_norm</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="179" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1afb2e1b4b8f6712c44e2b95cba20673da" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::xLen</definition>
+        <argsstring></argsstring>
+        <name>xLen</name>
+        <initializer>= <ref refid="parameters_8h_1ae86e3ec39013a0b8573f27e9b9a06a9b" kindref="member">len_x_cst</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="183" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a0b58b271a08183b0bd041ab73c1f0014" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::yLen</definition>
+        <argsstring></argsstring>
+        <name>yLen</name>
+        <initializer>= <ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="184" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a893f48ab585b5283f19f005d0ac918c9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::zLen</definition>
+        <argsstring></argsstring>
+        <name>zLen</name>
+        <initializer>= <ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="186" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a97f74c7d9b1d5667c98d5951d122a318" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::dX_i</definition>
+        <argsstring></argsstring>
+        <name>dX_i</name>
+        <initializer>= 1./<ref refid="structsimu__param_1a3e5313ca35d37f7bb64af2331c4e0d83" kindref="member">dX</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="188" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1aaa12daaae77a436367c2940375775104" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::nb_dim</definition>
+        <argsstring></argsstring>
+        <name>nb_dim</name>
+        <initializer>= <ref refid="parameters_8h_1ae4abc233898f783a9cb9b8aea5ae5e37" kindref="member">NB_DIM</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="189" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a06e5049dff8c1254dc513c3db538a9a5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::tMax</definition>
+        <argsstring></argsstring>
+        <name>tMax</name>
+        <initializer>= <ref refid="structsimu__param_1a9c733c9b060e2f5a955a00d14d6f925b" kindref="member">dt</ref>*<ref refid="parameters_8h_1a950233f4dbddd80d1d401a3e0e141e03" kindref="member">nb_it_max_cst</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="191" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ab443086dafb730123e297ba69ee699cd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::nb_sub_cycles</definition>
+        <argsstring></argsstring>
+        <name>nb_sub_cycles</name>
+        <initializer>= 11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="193" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a0e64ee052aa329dabc74a96accce1efc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::sub_dt</definition>
+        <argsstring></argsstring>
+        <name>sub_dt</name>
+        <initializer>= <ref refid="structsimu__param_1a9c733c9b060e2f5a955a00d14d6f925b" kindref="member">dt</ref>/<ref refid="structsimu__param_1ab443086dafb730123e297ba69ee699cd" kindref="member">nb_sub_cycles</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="194" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a0d62ba04094d4d23f348ded001d4997e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::rateSaveIt</definition>
+        <argsstring></argsstring>
+        <name>rateSaveIt</name>
+        <initializer>= std::max(1, int(.05*<ref refid="structsimu__param_1a06e5049dff8c1254dc513c3db538a9a5" kindref="member">tMax</ref>/<ref refid="structsimu__param_1a9c733c9b060e2f5a955a00d14d6f925b" kindref="member">dt</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="196" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a74aec1896e03f34c9d2e74c3a3fec776" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::nb_nodes</definition>
+        <argsstring></argsstring>
+        <name>nb_nodes</name>
+        <initializer>= <ref refid="parameters_8h_1ae86e3ec39013a0b8573f27e9b9a06a9b" kindref="member">len_x_cst</ref>*<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>*<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="203" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a00dec23bd98c63c8258bd831bf844772" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::nb_nodes_tot</definition>
+        <argsstring></argsstring>
+        <name>nb_nodes_tot</name>
+        <initializer>= (<ref refid="parameters_8h_1ae86e3ec39013a0b8573f27e9b9a06a9b" kindref="member">len_x_cst</ref>+4)*(<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>+4)*(<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>+4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="204" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ae17f8ea64dc8461d0048d05a3bf28eeb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::nb_part_add_sw</definition>
+        <argsstring></argsstring>
+        <name>nb_part_add_sw</name>
+        <initializer>= <ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>*<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>*<ref refid="parameters_8h_1a750a386563424871644ace4afacf9404" kindref="member">nb_part_node_cst</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="205" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ace084dde7ea1bf6e6feb37400ff9e946" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::nb_part_add_pla</definition>
+        <argsstring></argsstring>
+        <name>nb_part_add_pla</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="208" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a2cbd7acaac73b933b56eeaf9877d525f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::sum_pla_proba</definition>
+        <argsstring></argsstring>
+        <name>sum_pla_proba</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="209" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ad4b645e56dd469e00822c701d1c3da5e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::w_sw</definition>
+        <argsstring></argsstring>
+        <name>w_sw</name>
+        <initializer>= 1./<ref refid="parameters_8h_1a750a386563424871644ace4afacf9404" kindref="member">nb_part_node_cst</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="211" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1abdde8a3bfb8a41fd4e0f1e8241fddd27" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::w_pla</definition>
+        <argsstring></argsstring>
+        <name>w_pla</name>
+        <initializer>= 1.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="212" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1af171d48dafb6a6656e97dc544d2de8f7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::dens_min</definition>
+        <argsstring></argsstring>
+        <name>dens_min</name>
+        <initializer>= 0.05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="214" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a901bc1b9568235a8159ba679f99541f9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::nb_oscillations</definition>
+        <argsstring></argsstring>
+        <name>nb_oscillations</name>
+        <initializer>= 3.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="216" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a6c041f1cc49ed4856ffcb0b09ffa35ac" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::lambda_oscillation</definition>
+        <argsstring></argsstring>
+        <name>lambda_oscillation</name>
+        <initializer>= <ref refid="structsimu__param_1afb2e1b4b8f6712c44e2b95cba20673da" kindref="member">xLen</ref>*<ref refid="structsimu__param_1a3e5313ca35d37f7bb64af2331c4e0d83" kindref="member">dX</ref>/<ref refid="structsimu__param_1a901bc1b9568235a8159ba679f99541f9" kindref="member">nb_oscillations</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="217" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ae597afbad6829b04969c5ac44b434821" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::k_oscillation</definition>
+        <argsstring></argsstring>
+        <name>k_oscillation</name>
+        <initializer>= 2.*<ref refid="parameters_8h_1aa08a577393243b86dfd2a97e61443673" kindref="member">PI</ref>/<ref refid="structsimu__param_1a6c041f1cc49ed4856ffcb0b09ffa35ac" kindref="member">lambda_oscillation</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="218" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a28621cbdaa65c033cae76a52c13e4125" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::omega_iaw</definition>
+        <argsstring></argsstring>
+        <name>omega_iaw</name>
+        <initializer>= <ref refid="structsimu__param_1ae597afbad6829b04969c5ac44b434821" kindref="member">k_oscillation</ref>*<ref refid="structsimu__param_1a0877d06fb6a7f2e9f90b5acd9fb7c65e" kindref="member">v_s</ref>/<ref refid="structsimu__param_1a967c6c7c2d7f342151d89205965ef51c" kindref="member">v_A</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="219" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ac36c22e15d94cd0fa2008a81d3ec6eb4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_param::period_iaw</definition>
+        <argsstring></argsstring>
+        <name>period_iaw</name>
+        <initializer>= 2.*<ref refid="parameters_8h_1aa08a577393243b86dfd2a97e61443673" kindref="member">PI</ref>/<ref refid="structsimu__param_1a28621cbdaa65c033cae76a52c13e4125" kindref="member">omega_iaw</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="220" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1ad366364f742ebfbe58727c0491c00c88" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::mpi_rank</definition>
+        <argsstring></argsstring>
+        <name>mpi_rank</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="224" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1add95dea79b7668171eb6c7190b33cca5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::mpi_nb_proc</definition>
+        <argsstring></argsstring>
+        <name>mpi_nb_proc</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="225" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1aac04a92691b18e26da57d5edf30491cd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::len_buff_field</definition>
+        <argsstring></argsstring>
+        <name>len_buff_field</name>
+        <initializer>= int(4*(<ref refid="parameters_8h_1ae86e3ec39013a0b8573f27e9b9a06a9b" kindref="member">len_x_cst</ref>+4)*(<ref refid="parameters_8h_1a6ad723f14e2f6ce3bb369004131f5628" kindref="member">len_z_cst</ref>+4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="230" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__param_1a7e363361a13ebff05638553f1c53ec48" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simu_param::nb_part_tank</definition>
+        <argsstring></argsstring>
+        <name>nb_part_tank</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="233" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsimu__param_1a363a7fe3830fc617e5e93c56bef72f2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simu_param::printout_parameters</definition>
+        <argsstring>()</argsstring>
+        <name>printout_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="238" column="8" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="238" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="structsimu__param_1a94ae9ffb73c48b55f25c526e19b533d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simu_param::output_parameters</definition>
+        <argsstring>()</argsstring>
+        <name>output_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="315" column="8" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="315" bodyend="424"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/parameters.h" line="104" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/parameters.h" bodystart="104" bodyend="427"/>
+    <listofallmembers>
+      <member refid="structsimu__param_1afe3d226026b41f9a9ed07c9ce018ae9f" prot="public" virt="non-virtual"><scope>simu_param</scope><name>B0_no_norm</name></member>
+      <member refid="structsimu__param_1a0674f5a6bef457354bc7896529240a0e" prot="public" virt="non-virtual"><scope>simu_param</scope><name>B0_x</name></member>
+      <member refid="structsimu__param_1a7850dfb5a869e0beffe37960e809f8af" prot="public" virt="non-virtual"><scope>simu_param</scope><name>B0_y</name></member>
+      <member refid="structsimu__param_1ac1872e61359a70ce71402aae2cdfdd6c" prot="public" virt="non-virtual"><scope>simu_param</scope><name>B0_z</name></member>
+      <member refid="structsimu__param_1ae1095da4df42f39de030943f16dea621" prot="public" virt="non-virtual"><scope>simu_param</scope><name>beta</name></member>
+      <member refid="structsimu__param_1ab8ee301b86210657f3d4492cf87dd839" prot="public" virt="non-virtual"><scope>simu_param</scope><name>Beta_e</name></member>
+      <member refid="structsimu__param_1ab92e2cc4aec33b4bfc012168acc9b8bb" prot="public" virt="non-virtual"><scope>simu_param</scope><name>Beta_p</name></member>
+      <member refid="structsimu__param_1aa12efbd0a0168a6ccfea5a6242ef28bf" prot="public" virt="non-virtual"><scope>simu_param</scope><name>centre_x</name></member>
+      <member refid="structsimu__param_1aee78d7b5d090f577ae2ca3e7cd405930" prot="public" virt="non-virtual"><scope>simu_param</scope><name>centre_y</name></member>
+      <member refid="structsimu__param_1aa58753d1cf0e10621e4b2468bbfa6d4b" prot="public" virt="non-virtual"><scope>simu_param</scope><name>centre_z</name></member>
+      <member refid="structsimu__param_1a8ba743d7e509ff9538c77a3fd4e18d93" prot="public" virt="non-virtual"><scope>simu_param</scope><name>d_e</name></member>
+      <member refid="structsimu__param_1a6c8490dc67cd75032eb19f41076ffa3f" prot="public" virt="non-virtual"><scope>simu_param</scope><name>d_i</name></member>
+      <member refid="structsimu__param_1af171d48dafb6a6656e97dc544d2de8f7" prot="public" virt="non-virtual"><scope>simu_param</scope><name>dens_min</name></member>
+      <member refid="structsimu__param_1a75ddc8d77fe76cfe8d2cc377433896d6" prot="public" virt="non-virtual"><scope>simu_param</scope><name>dip_mom</name></member>
+      <member refid="structsimu__param_1a9c733c9b060e2f5a955a00d14d6f925b" prot="public" virt="non-virtual"><scope>simu_param</scope><name>dt</name></member>
+      <member refid="structsimu__param_1a3e5313ca35d37f7bb64af2331c4e0d83" prot="public" virt="non-virtual"><scope>simu_param</scope><name>dX</name></member>
+      <member refid="structsimu__param_1a97f74c7d9b1d5667c98d5951d122a318" prot="public" virt="non-virtual"><scope>simu_param</scope><name>dX_i</name></member>
+      <member refid="structsimu__param_1a7bb0dd153f8e7b59aca4cc7594a83bf4" prot="public" virt="non-virtual"><scope>simu_param</scope><name>E0</name></member>
+      <member refid="structsimu__param_1a9a61ec7055749e2e810bd7e302985f5e" prot="public" virt="non-virtual"><scope>simu_param</scope><name>e_amb</name></member>
+      <member refid="structsimu__param_1a02b1b7c1ed41a84619c3e04b4417ff99" prot="public" virt="non-virtual"><scope>simu_param</scope><name>e_hal</name></member>
+      <member refid="structsimu__param_1a8a0ae3ae9abf188a1498289126b4652d" prot="public" virt="non-virtual"><scope>simu_param</scope><name>e_mot</name></member>
+      <member refid="structsimu__param_1a2bd2cbd31725c47dfcd40acb44cb7f4d" prot="public" virt="non-virtual"><scope>simu_param</scope><name>eta_hyp_res</name></member>
+      <member refid="structsimu__param_1a573d89bd2dc0e0922b37f35c99966b75" prot="public" virt="non-virtual"><scope>simu_param</scope><name>eta_res_norm</name></member>
+      <member refid="structsimu__param_1a31780e161ad2f33f5856a78f32492b1a" prot="public" virt="non-virtual"><scope>simu_param</scope><name>eta_res_vac</name></member>
+      <member refid="structsimu__param_1ae35407cadf2f5e86960b3f1b40d8b2f4" prot="public" virt="non-virtual"><scope>simu_param</scope><name>eta_sm</name></member>
+      <member refid="structsimu__param_1afd8b2d216019ba63ca1eae956eb7ecd8" prot="public" virt="non-virtual"><scope>simu_param</scope><name>fluctu_sqrt</name></member>
+      <member refid="structsimu__param_1ae597afbad6829b04969c5ac44b434821" prot="public" virt="non-virtual"><scope>simu_param</scope><name>k_oscillation</name></member>
+      <member refid="structsimu__param_1ada9dd8ec10da8f783ac1237bc7c09498" prot="public" virt="non-virtual"><scope>simu_param</scope><name>lambda_D</name></member>
+      <member refid="structsimu__param_1a6c041f1cc49ed4856ffcb0b09ffa35ac" prot="public" virt="non-virtual"><scope>simu_param</scope><name>lambda_oscillation</name></member>
+      <member refid="structsimu__param_1aac04a92691b18e26da57d5edf30491cd" prot="public" virt="non-virtual"><scope>simu_param</scope><name>len_buff_field</name></member>
+      <member refid="structsimu__param_1a1def8df6385edf2a3ce7a00456586711" prot="public" virt="non-virtual"><scope>simu_param</scope><name>m0</name></member>
+      <member refid="structsimu__param_1add95dea79b7668171eb6c7190b33cca5" prot="public" virt="non-virtual"><scope>simu_param</scope><name>mpi_nb_proc</name></member>
+      <member refid="structsimu__param_1ad366364f742ebfbe58727c0491c00c88" prot="public" virt="non-virtual"><scope>simu_param</scope><name>mpi_rank</name></member>
+      <member refid="structsimu__param_1ad21e29c2c23eb8b5b42121454253d77a" prot="public" virt="non-virtual"><scope>simu_param</scope><name>n0_no_norm</name></member>
+      <member refid="structsimu__param_1aaa12daaae77a436367c2940375775104" prot="public" virt="non-virtual"><scope>simu_param</scope><name>nb_dim</name></member>
+      <member refid="structsimu__param_1a74aec1896e03f34c9d2e74c3a3fec776" prot="public" virt="non-virtual"><scope>simu_param</scope><name>nb_nodes</name></member>
+      <member refid="structsimu__param_1a00dec23bd98c63c8258bd831bf844772" prot="public" virt="non-virtual"><scope>simu_param</scope><name>nb_nodes_tot</name></member>
+      <member refid="structsimu__param_1a901bc1b9568235a8159ba679f99541f9" prot="public" virt="non-virtual"><scope>simu_param</scope><name>nb_oscillations</name></member>
+      <member refid="structsimu__param_1ace084dde7ea1bf6e6feb37400ff9e946" prot="public" virt="non-virtual"><scope>simu_param</scope><name>nb_part_add_pla</name></member>
+      <member refid="structsimu__param_1ae17f8ea64dc8461d0048d05a3bf28eeb" prot="public" virt="non-virtual"><scope>simu_param</scope><name>nb_part_add_sw</name></member>
+      <member refid="structsimu__param_1a7e363361a13ebff05638553f1c53ec48" prot="public" virt="non-virtual"><scope>simu_param</scope><name>nb_part_tank</name></member>
+      <member refid="structsimu__param_1ab443086dafb730123e297ba69ee699cd" prot="public" virt="non-virtual"><scope>simu_param</scope><name>nb_sub_cycles</name></member>
+      <member refid="structsimu__param_1a3e246ba6375f5406e1dcd3bf6549aba6" prot="public" virt="non-virtual"><scope>simu_param</scope><name>nu_d</name></member>
+      <member refid="structsimu__param_1ab7729f105429505573b32ce8dc659e7f" prot="public" virt="non-virtual"><scope>simu_param</scope><name>nu_i</name></member>
+      <member refid="structsimu__param_1a621819ff569c2e7ec93efb6de9a6e78c" prot="public" virt="non-virtual"><scope>simu_param</scope><name>omega_ce</name></member>
+      <member refid="structsimu__param_1af9b4e4c078d5ab4845de8dbeaf3dc113" prot="public" virt="non-virtual"><scope>simu_param</scope><name>omega_ci</name></member>
+      <member refid="structsimu__param_1a4b0a2a4b326166153e1d58e726fc9c92" prot="public" virt="non-virtual"><scope>simu_param</scope><name>omega_e</name></member>
+      <member refid="structsimu__param_1a13a72849b25f1eca7f9c8a2584efd1db" prot="public" virt="non-virtual"><scope>simu_param</scope><name>omega_i</name></member>
+      <member refid="structsimu__param_1a28621cbdaa65c033cae76a52c13e4125" prot="public" virt="non-virtual"><scope>simu_param</scope><name>omega_iaw</name></member>
+      <member refid="structsimu__param_1a94ae9ffb73c48b55f25c526e19b533d2" prot="public" virt="non-virtual"><scope>simu_param</scope><name>output_parameters</name></member>
+      <member refid="structsimu__param_1af68d1cdd2dee06cb694581fd3b8b4c54" prot="public" virt="non-virtual"><scope>simu_param</scope><name>p0</name></member>
+      <member refid="structsimu__param_1ac36c22e15d94cd0fa2008a81d3ec6eb4" prot="public" virt="non-virtual"><scope>simu_param</scope><name>period_iaw</name></member>
+      <member refid="structsimu__param_1a263c8b883030a64337e4b25f88581df0" prot="public" virt="non-virtual"><scope>simu_param</scope><name>poly_ind</name></member>
+      <member refid="structsimu__param_1a363a7fe3830fc617e5e93c56bef72f2b" prot="public" virt="non-virtual"><scope>simu_param</scope><name>printout_parameters</name></member>
+      <member refid="structsimu__param_1aa23a5b6e3282b671d811a33d652b3bab" prot="public" virt="non-virtual"><scope>simu_param</scope><name>Q</name></member>
+      <member refid="structsimu__param_1ad5a34343f83f86782e0ef9b22436f96d" prot="public" virt="non-virtual"><scope>simu_param</scope><name>q0</name></member>
+      <member refid="structsimu__param_1a2e37c7081b5e55e25a6d7066d69238ba" prot="public" virt="non-virtual"><scope>simu_param</scope><name>R_gyr</name></member>
+      <member refid="structsimu__param_1ae71d545471c24525a1cf78576a8cc05d" prot="public" virt="non-virtual"><scope>simu_param</scope><name>R_gyr_norm</name></member>
+      <member refid="structsimu__param_1a26a0bed6795d4859613b379cee83ab2a" prot="public" virt="non-virtual"><scope>simu_param</scope><name>r_obs</name></member>
+      <member refid="structsimu__param_1a0d62ba04094d4d23f348ded001d4997e" prot="public" virt="non-virtual"><scope>simu_param</scope><name>rateSaveIt</name></member>
+      <member refid="structsimu__param_1a0e64ee052aa329dabc74a96accce1efc" prot="public" virt="non-virtual"><scope>simu_param</scope><name>sub_dt</name></member>
+      <member refid="structsimu__param_1a2cbd7acaac73b933b56eeaf9877d525f" prot="public" virt="non-virtual"><scope>simu_param</scope><name>sum_pla_proba</name></member>
+      <member refid="structsimu__param_1acadfe114710671736791c69043bea321" prot="public" virt="non-virtual"><scope>simu_param</scope><name>t0</name></member>
+      <member refid="structsimu__param_1ad19dbf51b38e9ca6c6ec75738b8df124" prot="public" virt="non-virtual"><scope>simu_param</scope><name>Te_inf</name></member>
+      <member refid="structsimu__param_1a28f6202f8e9fa9e24fe6cc48b8b3fe43" prot="public" virt="non-virtual"><scope>simu_param</scope><name>Ti_inf</name></member>
+      <member refid="structsimu__param_1a06e5049dff8c1254dc513c3db538a9a5" prot="public" virt="non-virtual"><scope>simu_param</scope><name>tMax</name></member>
+      <member refid="structsimu__param_1a67322bee5f82cfcb6c7ba9331b38e604" prot="public" virt="non-virtual"><scope>simu_param</scope><name>u0</name></member>
+      <member refid="structsimu__param_1ab1cdcdb047528029986a5fabb4911122" prot="public" virt="non-virtual"><scope>simu_param</scope><name>v0</name></member>
+      <member refid="structsimu__param_1af9d3d35fa2cc659813b38309f6a2857e" prot="public" virt="non-virtual"><scope>simu_param</scope><name>v0_com</name></member>
+      <member refid="structsimu__param_1a967c6c7c2d7f342151d89205965ef51c" prot="public" virt="non-virtual"><scope>simu_param</scope><name>v_A</name></member>
+      <member refid="structsimu__param_1abe4645635ccca35655739e535a4867cb" prot="public" virt="non-virtual"><scope>simu_param</scope><name>v_ms</name></member>
+      <member refid="structsimu__param_1ac839a17222cd079bb961fe163510adfa" prot="public" virt="non-virtual"><scope>simu_param</scope><name>v_obs</name></member>
+      <member refid="structsimu__param_1a0877d06fb6a7f2e9f90b5acd9fb7c65e" prot="public" virt="non-virtual"><scope>simu_param</scope><name>v_s</name></member>
+      <member refid="structsimu__param_1a5499004355258d0085e4d63c0f898e2d" prot="public" virt="non-virtual"><scope>simu_param</scope><name>v_the</name></member>
+      <member refid="structsimu__param_1a4330a066a84069b77993abe0eb57f42d" prot="public" virt="non-virtual"><scope>simu_param</scope><name>v_thi</name></member>
+      <member refid="structsimu__param_1abdde8a3bfb8a41fd4e0f1e8241fddd27" prot="public" virt="non-virtual"><scope>simu_param</scope><name>w_pla</name></member>
+      <member refid="structsimu__param_1ad4b645e56dd469e00822c701d1c3da5e" prot="public" virt="non-virtual"><scope>simu_param</scope><name>w_sw</name></member>
+      <member refid="structsimu__param_1a86961f9e2705eaeca744f7df275ff1a3" prot="public" virt="non-virtual"><scope>simu_param</scope><name>x0</name></member>
+      <member refid="structsimu__param_1afb2e1b4b8f6712c44e2b95cba20673da" prot="public" virt="non-virtual"><scope>simu_param</scope><name>xLen</name></member>
+      <member refid="structsimu__param_1a0b58b271a08183b0bd041ab73c1f0014" prot="public" virt="non-virtual"><scope>simu_param</scope><name>yLen</name></member>
+      <member refid="structsimu__param_1aec73f1b702faf6eaf36ef143cbeeaf83" prot="public" virt="non-virtual"><scope>simu_param</scope><name>Z_pla</name></member>
+      <member refid="structsimu__param_1a893f48ab585b5283f19f005d0ac918c9" prot="public" virt="non-virtual"><scope>simu_param</scope><name>zLen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

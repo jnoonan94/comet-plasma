@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structbuff__part" kind="struct" language="C++" prot="public">
+    <compoundname>buff_part</compoundname>
+    <includes refid="structures_8h" local="no">structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbuff__part_1ab6dca35d20de71b2539d9fcb4487a29b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int buff_part::idx_free[buff_size_cst]</definition>
+        <argsstring>[buff_size_cst]</argsstring>
+        <name>idx_free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An array containing indices of free particles, indices corresponding to the particles&apos; pool object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="202" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbuff__part_1a0e35e55b3d9f61d7c2c69aa621530082" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int buff_part::next_idx</definition>
+        <argsstring></argsstring>
+        <name>next_idx</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gives a single temporary index of a particle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="203" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbuff__part_1a80e1ca79451b511837e0ef32668220b9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float buff_part::buff_send[7 *buff_size_cst]</definition>
+        <argsstring>[7 *buff_size_cst]</argsstring>
+        <name>buff_send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send buffer, containing pool indices of particles to be communicated out. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="211" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbuff__part_1a4afae359aba38d5a424ce404efb84c8d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float buff_part::buff_rece[7 *buff_size_cst]</definition>
+        <argsstring>[7 *buff_size_cst]</argsstring>
+        <name>buff_rece</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Receive buffer, containing pool indices of particles to be communicated in. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="213" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbuff__part_1a221c164f19978ff6be11b4f43965b0bb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int buff_part::next_idx_comm</definition>
+        <argsstring></argsstring>
+        <name>next_idx_comm</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Temporary index. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="215" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbuff__part_1abb8622ac4730323f0c5e9ff28f29c3da" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int buff_part::nb_part_send</definition>
+        <argsstring></argsstring>
+        <name>nb_part_send</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of particles to be sent. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="216" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbuff__part_1a83c8bc5fbe51052b87ec30f7f0ae272d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int buff_part::nb_part_rece</definition>
+        <argsstring></argsstring>
+        <name>nb_part_rece</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of particles to be received. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="217" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbuff__part_1aab252d59dfe7764a510e1cee44e93823" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int buff_part::exosphere[3][nb_part_add_pla_cst]</definition>
+        <argsstring>[3][nb_part_add_pla_cst]</argsstring>
+        <name>exosphere</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="222" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbuff__part_1afc6277db179d8d5c74a0cb0b004efd06" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float buff_part::exo_proba[len_x_cst *len_y_cst *len_z_cst]</definition>
+        <argsstring>[len_x_cst *len_y_cst *len_z_cst]</argsstring>
+        <name>exo_proba</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="223" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Particle buffer, managing particles&apos; MPI communications and injection. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure contains all required information when particles need to be either injected or communicated from one MPI process to another. </para>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="198" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="198" bodyend="225"/>
+    <listofallmembers>
+      <member refid="structbuff__part_1a4afae359aba38d5a424ce404efb84c8d" prot="public" virt="non-virtual"><scope>buff_part</scope><name>buff_rece</name></member>
+      <member refid="structbuff__part_1a80e1ca79451b511837e0ef32668220b9" prot="public" virt="non-virtual"><scope>buff_part</scope><name>buff_send</name></member>
+      <member refid="structbuff__part_1afc6277db179d8d5c74a0cb0b004efd06" prot="public" virt="non-virtual"><scope>buff_part</scope><name>exo_proba</name></member>
+      <member refid="structbuff__part_1aab252d59dfe7764a510e1cee44e93823" prot="public" virt="non-virtual"><scope>buff_part</scope><name>exosphere</name></member>
+      <member refid="structbuff__part_1ab6dca35d20de71b2539d9fcb4487a29b" prot="public" virt="non-virtual"><scope>buff_part</scope><name>idx_free</name></member>
+      <member refid="structbuff__part_1a83c8bc5fbe51052b87ec30f7f0ae272d" prot="public" virt="non-virtual"><scope>buff_part</scope><name>nb_part_rece</name></member>
+      <member refid="structbuff__part_1abb8622ac4730323f0c5e9ff28f29c3da" prot="public" virt="non-virtual"><scope>buff_part</scope><name>nb_part_send</name></member>
+      <member refid="structbuff__part_1a0e35e55b3d9f61d7c2c69aa621530082" prot="public" virt="non-virtual"><scope>buff_part</scope><name>next_idx</name></member>
+      <member refid="structbuff__part_1a221c164f19978ff6be11b4f43965b0bb" prot="public" virt="non-virtual"><scope>buff_part</scope><name>next_idx_comm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

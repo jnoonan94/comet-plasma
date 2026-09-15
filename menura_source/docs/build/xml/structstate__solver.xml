@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structstate__solver" kind="struct" language="C++" prot="public">
+    <compoundname>state_solver</compoundname>
+    <includes refid="structures_8h" local="no">structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool state_solver::breakSolver</definition>
+        <argsstring></argsstring>
+        <name>breakSolver</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="278" column="8" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstate__solver_1ab3a03ed18e9e51da616d492f19c0da84" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool state_solver::invalidB</definition>
+        <argsstring></argsstring>
+        <name>invalidB</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="279" column="8" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstate__solver_1ab518e9c5f1af4ac82ddd9fced242c569" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool state_solver::invalidE</definition>
+        <argsstring></argsstring>
+        <name>invalidE</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="280" column="8" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstate__solver_1aadda2d60d1e7c5d8bcd2c3d37c2b3b55" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool state_solver::invalidDens</definition>
+        <argsstring></argsstring>
+        <name>invalidDens</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="281" column="8" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstate__solver_1aad95daf9432d799fcc429b39e7ad1b4b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool state_solver::invalidCurr</definition>
+        <argsstring></argsstring>
+        <name>invalidCurr</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="282" column="8" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstate__solver_1a57a8652fa9574297625682296065b4a2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool state_solver::invalidCurrTot</definition>
+        <argsstring></argsstring>
+        <name>invalidCurrTot</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="283" column="8" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstate__solver_1ae2555d71fe5e599abe6aa1dc435880e5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool state_solver::invalid_new_part_idx</definition>
+        <argsstring></argsstring>
+        <name>invalid_new_part_idx</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="284" column="8" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstate__solver_1a2049e43a5df887ec2cb2d6b06fc1b9b2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int state_solver::error_ID</definition>
+        <argsstring></argsstring>
+        <name>error_ID</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="285" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstate__solver_1ae6223a9233cda9a04ccc501776f070ba" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string state_solver::cuda_error_str</definition>
+        <argsstring></argsstring>
+        <name>cuda_error_str</name>
+        <initializer>= &quot;cudaSuccess&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="286" column="15" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstate__solver_1a17243cfb663422f7a6add195944eb648" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string state_solver::error_str2[20]</definition>
+        <argsstring>[20]</argsstring>
+        <name>error_str2</name>
+        <initializer>= {std::string(&quot;Error ID 1, cudaMalloc of particles.&quot;),
+                                 std::string(&quot;Error ID 2, cudaMalloc of fields.&quot;),
+                                 std::string(&quot;Error ID 3, empty.&quot;),
+                                 std::string(&quot;Error ID 4, empty.&quot;),
+                                 std::string(&quot;Error ID 5, empty.&quot;),
+                                 std::string(&quot;Error ID 6, empty.&quot;),
+                                 std::string(&quot;Error ID 7, empty.&quot;),
+                                 std::string(&quot;Error ID 8, empty.&quot;),
+                                 std::string(&quot;Error ID 9, empty.&quot;),
+                                 std::string(&quot;Error ID 10, empty.&quot;),
+                                 std::string(&quot;Error ID 11, empty.&quot;),
+                                 std::string(&quot;Error ID 12, empty.&quot;),
+                                 std::string(&quot;Error ID 13, empty.&quot;),
+                                 std::string(&quot;Error ID 14, empty.&quot;),
+                                 std::string(&quot;Error ID 15, empty.&quot;),
+                                 std::string(&quot;Error ID 16, empty.&quot;),
+                                 std::string(&quot;Error ID 17, empty.&quot;),
+                                 std::string(&quot;Error ID 18, empty.&quot;),
+                                 std::string(&quot;Error ID 19, empty.&quot;),
+                                 std::string(&quot;Error ID 20, empty.&quot;) }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="287" column="15" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="277" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="277" bodyend="307"/>
+    <listofallmembers>
+      <member refid="structstate__solver_1a2e056166003d3f920fa1a1f90ce45a29" prot="public" virt="non-virtual"><scope>state_solver</scope><name>breakSolver</name></member>
+      <member refid="structstate__solver_1ae6223a9233cda9a04ccc501776f070ba" prot="public" virt="non-virtual"><scope>state_solver</scope><name>cuda_error_str</name></member>
+      <member refid="structstate__solver_1a2049e43a5df887ec2cb2d6b06fc1b9b2" prot="public" virt="non-virtual"><scope>state_solver</scope><name>error_ID</name></member>
+      <member refid="structstate__solver_1a17243cfb663422f7a6add195944eb648" prot="public" virt="non-virtual"><scope>state_solver</scope><name>error_str2</name></member>
+      <member refid="structstate__solver_1ae2555d71fe5e599abe6aa1dc435880e5" prot="public" virt="non-virtual"><scope>state_solver</scope><name>invalid_new_part_idx</name></member>
+      <member refid="structstate__solver_1ab3a03ed18e9e51da616d492f19c0da84" prot="public" virt="non-virtual"><scope>state_solver</scope><name>invalidB</name></member>
+      <member refid="structstate__solver_1aad95daf9432d799fcc429b39e7ad1b4b" prot="public" virt="non-virtual"><scope>state_solver</scope><name>invalidCurr</name></member>
+      <member refid="structstate__solver_1a57a8652fa9574297625682296065b4a2" prot="public" virt="non-virtual"><scope>state_solver</scope><name>invalidCurrTot</name></member>
+      <member refid="structstate__solver_1aadda2d60d1e7c5d8bcd2c3d37c2b3b55" prot="public" virt="non-virtual"><scope>state_solver</scope><name>invalidDens</name></member>
+      <member refid="structstate__solver_1ab518e9c5f1af4ac82ddd9fced242c569" prot="public" virt="non-virtual"><scope>state_solver</scope><name>invalidE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

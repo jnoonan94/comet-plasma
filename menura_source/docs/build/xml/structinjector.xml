@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structinjector" kind="struct" language="C++" prot="public">
+    <compoundname>injector</compoundname>
+    <includes refid="structures_8h" local="no">structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structinjector_1af1102f5412d9a0f5ebd8cfbe152d6877" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float injector::B[3][2+nb_cell_per_shift_cst][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][2+nb_cell_per_shift_cst][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="177" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinjector_1a3acd55f6378dca7a74cc3325e155e76b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float injector::E[3][2+nb_cell_per_shift_cst][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][2+nb_cell_per_shift_cst][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>E</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="178" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinjector_1ae6ae7a6bc5b5748545c782c53b65c334" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float injector::Ji[3][2+nb_cell_per_shift_cst][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][2+nb_cell_per_shift_cst][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>Ji</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="179" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinjector_1afa4edcea982dd5f35ddc782f7170a844" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float injector::density[2+nb_cell_per_shift_cst][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[2+nb_cell_per_shift_cst][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>density</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="180" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinjector_1a47c34c3710eaf4df37992ef10b6d70d5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float injector::rx[injec_size_cst]</definition>
+        <argsstring>[injec_size_cst]</argsstring>
+        <name>rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="182" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinjector_1a953fa2b4b1cf3f0c609579b1a90dc481" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float injector::ry[injec_size_cst]</definition>
+        <argsstring>[injec_size_cst]</argsstring>
+        <name>ry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="183" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinjector_1aab8cb78f15b25cd8d0297a871a452816" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float injector::rz[injec_size_cst]</definition>
+        <argsstring>[injec_size_cst]</argsstring>
+        <name>rz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="185" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinjector_1afa2ac3b173bb0a895bd3dd0b31208ada" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float injector::vx[injec_size_cst]</definition>
+        <argsstring>[injec_size_cst]</argsstring>
+        <name>vx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="187" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinjector_1a45ea8afc872a58b09dd1c2cfe655d6d2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float injector::vy[injec_size_cst]</definition>
+        <argsstring>[injec_size_cst]</argsstring>
+        <name>vy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="188" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinjector_1ac734eb4bcf82f225710a92ae613f3289" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float injector::vz[injec_size_cst]</definition>
+        <argsstring>[injec_size_cst]</argsstring>
+        <name>vz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="189" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="170" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="170" bodyend="190"/>
+    <listofallmembers>
+      <member refid="structinjector_1af1102f5412d9a0f5ebd8cfbe152d6877" prot="public" virt="non-virtual"><scope>injector</scope><name>B</name></member>
+      <member refid="structinjector_1afa4edcea982dd5f35ddc782f7170a844" prot="public" virt="non-virtual"><scope>injector</scope><name>density</name></member>
+      <member refid="structinjector_1a3acd55f6378dca7a74cc3325e155e76b" prot="public" virt="non-virtual"><scope>injector</scope><name>E</name></member>
+      <member refid="structinjector_1ae6ae7a6bc5b5748545c782c53b65c334" prot="public" virt="non-virtual"><scope>injector</scope><name>Ji</name></member>
+      <member refid="structinjector_1a47c34c3710eaf4df37992ef10b6d70d5" prot="public" virt="non-virtual"><scope>injector</scope><name>rx</name></member>
+      <member refid="structinjector_1a953fa2b4b1cf3f0c609579b1a90dc481" prot="public" virt="non-virtual"><scope>injector</scope><name>ry</name></member>
+      <member refid="structinjector_1aab8cb78f15b25cd8d0297a871a452816" prot="public" virt="non-virtual"><scope>injector</scope><name>rz</name></member>
+      <member refid="structinjector_1afa2ac3b173bb0a895bd3dd0b31208ada" prot="public" virt="non-virtual"><scope>injector</scope><name>vx</name></member>
+      <member refid="structinjector_1a45ea8afc872a58b09dd1c2cfe655d6d2" prot="public" virt="non-virtual"><scope>injector</scope><name>vy</name></member>
+      <member refid="structinjector_1ac734eb4bcf82f225710a92ae613f3289" prot="public" virt="non-virtual"><scope>injector</scope><name>vz</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

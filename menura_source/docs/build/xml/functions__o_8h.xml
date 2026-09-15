@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="functions__o_8h" kind="file" language="C++">
+    <compoundname>functions_o.h</compoundname>
+    <includes refid="parameters_8h" local="yes">parameters.h</includes>
+    <includedby refid="functions__i_8cpp" local="yes">/home/etienneb/Models/Menura/menura/src/functions_i.cpp</includedby>
+    <includedby refid="functions__o_8cpp" local="yes">/home/etienneb/Models/Menura/menura/src/functions_o.cpp</includedby>
+    <includedby refid="menura_8cu" local="yes">/home/etienneb/Models/Menura/menura/src/menura.cu</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>cmath</label>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="2">
+        <label>parameters.h</label>
+        <link refid="parameters_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>/home/etienneb/Models/Menura/menura/src/functions_o.h</label>
+        <link refid="functions__o_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/etienneb/Models/Menura/menura/src/functions_o.cpp</label>
+        <link refid="functions__o_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/etienneb/Models/Menura/menura/src/functions_o.h</label>
+        <link refid="functions__o_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/etienneb/Models/Menura/menura/src/menura.cu</label>
+        <link refid="menura_8cu"/>
+      </node>
+      <node id="2">
+        <label>/home/etienneb/Models/Menura/menura/src/functions_i.cpp</label>
+        <link refid="functions__i_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="functions__o_8h_1a6a9e44e625b39ecb0baef909ce77fae8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void output_HK</definition>
+        <argsstring>(house_keeping *HK, trajectory *traj, moments *mom, root_mean_sqr *rms, simu_param *sP, int idx_save)</argsstring>
+        <name>output_HK</name>
+        <param>
+          <type><ref refid="structhouse__keeping" kindref="compound">house_keeping</ref> *</type>
+          <declname>HK</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrajectory" kindref="compound">trajectory</ref> *</type>
+          <declname>traj</declname>
+        </param>
+        <param>
+          <type><ref refid="structmoments" kindref="compound">moments</ref> *</type>
+          <declname>mom</declname>
+        </param>
+        <param>
+          <type><ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref> *</type>
+          <declname>rms</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx_save</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/functions_o.h" line="8" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/functions_o.cpp" bodystart="27" bodyend="105" declfile="/home/etienneb/Models/Menura/menura/src/functions_o.h" declline="8" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="functions__o_8h_1ae2f34379129b9da1d3014dd79f52394b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void output_particles</definition>
+        <argsstring>(particles *p, int indIt, simu_param *sP)</argsstring>
+        <name>output_particles</name>
+        <param>
+          <type><ref refid="structparticles" kindref="compound">particles</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indIt</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>It appears that cnpy cannot output files larger than some unknown size. Say this size is 2 Go. This limit would be reached for over a million particles. We save as many files smaller than 2 Gb as hundreds of millions of particles. 1e6 particles -&gt; 19.1 Mb</para>
+<para>Current index where to write a valid particle in the flat array. Comes back to zero every time a file is written out.</para>
+<para>Number of particles in one particular file. Either nb_part_per_file, or the remaining number of valid particles.</para>
+<para>Total number of valid particles already written out.</para>
+<para>How many particles in the first (maybe only) file:</para>
+<para>Iterating over all particles in memory, valid or not, with index n:</para>
+<para>Gathered enough particles for that file:</para>
+<para>Write out the file:</para>
+<para>Increase file index and number of particle to write in the next file:</para>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/functions_o.h" line="10" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/functions_o.cpp" bodystart="107" bodyend="229" declfile="/home/etienneb/Models/Menura/menura/src/functions_o.h" declline="10" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="functions__o_8h_1ab84addcbb83e1873c4569bf5436fea82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void output_fields</definition>
+        <argsstring>(simu_fields *fields, int indIt, simu_param *sP)</argsstring>
+        <name>output_fields</name>
+        <param>
+          <type><ref refid="structsimu__fields" kindref="compound">simu_fields</ref> *</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indIt</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/functions_o.h" line="11" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/functions_o.cpp" bodystart="231" bodyend="268" declfile="/home/etienneb/Models/Menura/menura/src/functions_o.h" declline="11" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="functions__o_8h_1adde1392e4aaef3d10c8115f391a7eb67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void output_fields_time_space</definition>
+        <argsstring>(fields_time_space *fields_t_s, int indIt, simu_param *sP)</argsstring>
+        <name>output_fields_time_space</name>
+        <param>
+          <type><ref refid="structfields__time__space" kindref="compound">fields_time_space</ref> *</type>
+          <declname>fields_t_s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indIt</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/functions_o.h" line="12" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/functions_o.cpp" bodystart="270" bodyend="309" declfile="/home/etienneb/Models/Menura/menura/src/functions_o.h" declline="12" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="functions__o_8h_1ae2ceb6d9e9bdfa23fe1b8b1b9db97891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void output_density_species</definition>
+        <argsstring>(simu_fields *fields, int ind_it, simu_param *sP)</argsstring>
+        <name>output_density_species</name>
+        <param>
+          <type><ref refid="structsimu__fields" kindref="compound">simu_fields</ref> *</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ind_it</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/functions_o.h" line="13" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/functions_o.cpp" bodystart="311" bodyend="361" declfile="/home/etienneb/Models/Menura/menura/src/functions_o.h" declline="13" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="functions__o_8h_1a143446a334d11ea5b21701a6dbaf000a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void output_ohm_components</definition>
+        <argsstring>(simu_B_field *B, simu_fields *fields, simu_param *sP, int ind_it)</argsstring>
+        <name>output_ohm_components</name>
+        <param>
+          <type><ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref> *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__fields" kindref="compound">simu_fields</ref> *</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ind_it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/functions_o.h" line="14" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/functions_o.cpp" bodystart="363" bodyend="426" declfile="/home/etienneb/Models/Menura/menura/src/functions_o.h" declline="14" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="functions__o_8h_1a288071f8ccd28e11dc26cd86077e7c99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void output_B_field</definition>
+        <argsstring>(simu_B_field *B, int indIt, simu_param *sP)</argsstring>
+        <name>output_B_field</name>
+        <param>
+          <type><ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref> *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indIt</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/functions_o.h" line="15" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/functions_o.cpp" bodystart="428" bodyend="471" declfile="/home/etienneb/Models/Menura/menura/src/functions_o.h" declline="15" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="functions__o_8h_1a16b8e0ec62b8e24ceba0a6b9ad29d7e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void output_grid</definition>
+        <argsstring>(simu_grid *grid, simu_param *sP)</argsstring>
+        <name>output_grid</name>
+        <param>
+          <type><ref refid="structsimu__grid" kindref="compound">simu_grid</ref> *</type>
+          <declname>grid</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__param" kindref="compound">simu_param</ref> *</type>
+          <declname>sP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/functions_o.h" line="16" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/functions_o.cpp" bodystart="474" bodyend="522" declfile="/home/etienneb/Models/Menura/menura/src/functions_o.h" declline="16" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="functions__o_8h_1a1203aa873b8c8ff10f99f157ab5c6a1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void outputFiles</definition>
+        <argsstring>(particles *p, simu_grid *grid, float curr[3][len_x_cst][len_y_cst], float dens[len_x_cst][len_y_cst], float E[3][len_x_cst][len_y_cst], float B[3][len_x_cst][len_y_cst], int indIt, float energies[12][nb_it_max_cst])</argsstring>
+        <name>outputFiles</name>
+        <param>
+          <type><ref refid="structparticles" kindref="compound">particles</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structsimu__grid" kindref="compound">simu_grid</ref> *</type>
+          <declname>grid</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>curr</declname>
+          <array>[3][len_x_cst][len_y_cst]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dens</declname>
+          <array>[len_x_cst][len_y_cst]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>E</declname>
+          <array>[3][len_x_cst][len_y_cst]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>B</declname>
+          <array>[3][len_x_cst][len_y_cst]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indIt</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>energies</declname>
+          <array>[12][nb_it_max_cst]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/functions_o.h" line="17" column="6" declfile="/home/etienneb/Models/Menura/menura/src/functions_o.h" declline="17" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="functions__o_8h_1a73344231681880ab13c2495a89962d98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sortie</definition>
+        <argsstring>()</argsstring>
+        <name>sortie</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/functions_o.h" line="19" column="6" bodyfile="/home/etienneb/Models/Menura/menura/src/utils.h" bodystart="182" bodyend="191" declfile="/home/etienneb/Models/Menura/menura/src/functions_o.h" declline="19" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__FUNCTIONS_O_H_INCLUDED__<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>x.h<sp/>hasn&apos;t<sp/>been<sp/>included<sp/>yet...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__FUNCTIONS_O_H_INCLUDED__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="parameters_8h" kindref="compound">parameters.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;curand.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;curand_kernel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="functions__o_8h_1a6a9e44e625b39ecb0baef909ce77fae8" kindref="member">output_HK</ref>(<ref refid="structhouse__keeping" kindref="compound">house_keeping</ref>*<sp/>HK,<sp/><ref refid="structtrajectory" kindref="compound">trajectory</ref>*<sp/>traj,<sp/><ref refid="structmoments" kindref="compound">moments</ref>*<sp/>mom,<sp/><ref refid="structroot__mean__sqr" kindref="compound">root_mean_sqr</ref>*<sp/>rms,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx_save)<sp/>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>void<sp/>output_particles(particles*<sp/>p,<sp/>int<sp/>indIt,<sp/>simu_param*<sp/>sP)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="functions__o_8h_1ae2f34379129b9da1d3014dd79f52394b" kindref="member">output_particles</ref>(<ref refid="structparticles" kindref="compound">particles</ref>*<sp/>p,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indIt,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP)<sp/>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="functions__o_8h_1ab84addcbb83e1873c4569bf5436fea82" kindref="member">output_fields</ref>(<ref refid="structsimu__fields" kindref="compound">simu_fields</ref>*<sp/>fields,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indIt,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP)<sp/>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="functions__o_8h_1adde1392e4aaef3d10c8115f391a7eb67" kindref="member">output_fields_time_space</ref>(<ref refid="structfields__time__space" kindref="compound">fields_time_space</ref>*<sp/>fields_t_s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indIt,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP)<sp/>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="functions__o_8h_1ae2ceb6d9e9bdfa23fe1b8b1b9db97891" kindref="member">output_density_species</ref>(<ref refid="structsimu__fields" kindref="compound">simu_fields</ref>*<sp/>fields,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ind_it,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP)<sp/>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="functions__o_8h_1a143446a334d11ea5b21701a6dbaf000a" kindref="member">output_ohm_components</ref>(<ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref>*<sp/>B,<sp/><ref refid="structsimu__fields" kindref="compound">simu_fields</ref>*<sp/>fields,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ind_it)<sp/>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="functions__o_8h_1a288071f8ccd28e11dc26cd86077e7c99" kindref="member">output_B_field</ref>(<ref refid="structsimu__B__field" kindref="compound">simu_B_field</ref>*<sp/>B,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indIt,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP)<sp/>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="functions__o_8h_1a16b8e0ec62b8e24ceba0a6b9ad29d7e5" kindref="member">output_grid</ref>(<ref refid="structsimu__grid" kindref="compound">simu_grid</ref>*<sp/>grid,<sp/><ref refid="structsimu__param" kindref="compound">simu_param</ref>*<sp/>sP)<sp/>;</highlight></codeline>
+<codeline lineno="17" refid="functions__o_8h_1a1203aa873b8c8ff10f99f157ab5c6a1e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="functions__o_8h_1a1203aa873b8c8ff10f99f157ab5c6a1e" kindref="member">outputFiles</ref>(<ref refid="structparticles" kindref="compound">particles</ref>*<sp/>p,<sp/><ref refid="structsimu__grid" kindref="compound">simu_grid</ref>*<sp/>grid,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>curr[3][<ref refid="parameters_8h_1ae86e3ec39013a0b8573f27e9b9a06a9b" kindref="member">len_x_cst</ref>][<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>],<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dens[<ref refid="parameters_8h_1ae86e3ec39013a0b8573f27e9b9a06a9b" kindref="member">len_x_cst</ref>][<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>],</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>E[3][<ref refid="parameters_8h_1ae86e3ec39013a0b8573f27e9b9a06a9b" kindref="member">len_x_cst</ref>][<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>],<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>B[3][<ref refid="parameters_8h_1ae86e3ec39013a0b8573f27e9b9a06a9b" kindref="member">len_x_cst</ref>][<ref refid="parameters_8h_1a54762863aa8b8693ce8e432813e1fabf" kindref="member">len_y_cst</ref>],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indIt,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>energies<sp/>[12][<ref refid="parameters_8h_1a950233f4dbddd80d1d401a3e0e141e03" kindref="member">nb_it_max_cst</ref>])<sp/>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="functions__o_8h_1a73344231681880ab13c2495a89962d98" kindref="member">sortie</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/etienneb/Models/Menura/menura/src/functions_o.h"/>
+  </compounddef>
+</doxygen>

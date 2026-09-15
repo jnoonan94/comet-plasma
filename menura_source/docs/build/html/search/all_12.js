@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['r_5fgyr_304',['R_gyr',['../structsimu__param.html#a2e37c7081b5e55e25a6d7066d69238ba',1,'simu_param']]],
+  ['r_5fgyr_5fnorm_305',['R_gyr_norm',['../structsimu__param.html#ae71d545471c24525a1cf78576a8cc05d',1,'simu_param']]],
+  ['r_5fobs_306',['r_obs',['../structsimu__param.html#a26a0bed6795d4859613b379cee83ab2a',1,'simu_param']]],
+  ['rand_5funiform_5fk_307',['rand_uniform_k',['../kernels__particles_8cuh.html#a3ad66969a3426b2ca87af02032389d11',1,'kernels_particles.cuh']]],
+  ['rate_5fsave_5ffield_5fcst_308',['rate_save_field_cst',['../parameters_8h.html#ac8caa714bc337e1aec5936bf54bd6867',1,'parameters.h']]],
+  ['rate_5fsave_5fparticles_5fcst_309',['rate_save_particles_cst',['../parameters_8h.html#aa8ffb231dc23b1d49b6f0390cf68c278',1,'parameters.h']]],
+  ['rate_5fsave_5ft_5fcst_310',['rate_save_t_cst',['../parameters_8h.html#aa8bee530a37e3e84d255553d37211f25',1,'parameters.h']]],
+  ['rate_5fsave_5fx_5fcst_311',['rate_save_x_cst',['../parameters_8h.html#a1ddb2c9c938018e1fc79c13abc3f9205',1,'parameters.h']]],
+  ['rate_5fsave_5fy_5fcst_312',['rate_save_y_cst',['../parameters_8h.html#a7a151ae063dcd42e77cfb6cb1b7662d4',1,'parameters.h']]],
+  ['ratesaveit_313',['rateSaveIt',['../structsimu__param.html#a0d62ba04094d4d23f348ded001d4997e',1,'simu_param']]],
+  ['receive_5fsend_5fpart_5fdown_314',['receive_send_part_down',['../kernels__calls_8h.html#a719450b2822983574d9b7d4b51c0eb70',1,'kernels_calls.h']]],
+  ['receive_5fsend_5fpart_5fup_315',['receive_send_part_up',['../kernels__calls_8h.html#a251057d5b094d17a57af4fc7ef84d24f',1,'kernels_calls.h']]],
+  ['reset_5fidx_5fcomm_5fk_316',['reset_idx_comm_k',['../kernels__particles_8cuh.html#a43f114314f0ea6385c5184d07c46490c',1,'kernels_particles.cuh']]],
+  ['reset_5fidx_5ffree_5fk_317',['reset_idx_free_k',['../kernels__particles_8cuh.html#a8440156936092edb0c7fd71fd08a8209',1,'kernels_particles.cuh']]],
+  ['reset_5frms_5fk_318',['reset_rms_k',['../kernels__HK_8cuh.html#a4717e28d84e28bb9fc7a24e872e63fa2',1,'kernels_HK.cuh']]],
+  ['reset_5fstate_5fsolver_5fk_319',['reset_state_solver_k',['../kernels__HK_8cuh.html#a6a5dc55fad40b3527e7727305466fb98',1,'kernels_HK.cuh']]],
+  ['rms_5fk_320',['rms_k',['../kernels__HK_8cuh.html#ad76f8ee5b731a56e6c40c4d8abab987b',1,'kernels_HK.cuh']]],
+  ['root_5fmean_5fsqr_321',['root_mean_sqr',['../structroot__mean__sqr.html',1,'']]],
+  ['rsq_322',['rsq',['../structsimu__grid.html#a58adcea053a336d8bd31895ec0ab522f',1,'simu_grid']]],
+  ['runtime_323',['runTime',['../structhouse__keeping.html#acee5fa20286349e2e3c396744f52c003',1,'house_keeping']]],
+  ['rx_324',['rx',['../structtrajectory.html#a8742fec081ac9ec1186d385beed3c728',1,'trajectory::rx()'],['../structinjector.html#a47c34c3710eaf4df37992ef10b6d70d5',1,'injector::rx()'],['../structparticles.html#ac564bf44942c3296b0bb765d9c9a545d',1,'particles::rx()']]],
+  ['ry_325',['ry',['../structtrajectory.html#a8ce1c027a4d6d73723a92a2d223b503c',1,'trajectory::ry()'],['../structinjector.html#a953fa2b4b1cf3f0c609579b1a90dc481',1,'injector::ry()'],['../structparticles.html#aba286af18690d67c641f20b0622fae97',1,'particles::ry()']]],
+  ['rz_326',['rz',['../structtrajectory.html#aff45cfb05a5957dd672c6a6836f4a95e',1,'trajectory::rz()'],['../structinjector.html#aab8cb78f15b25cd8d0297a871a452816',1,'injector::rz()'],['../structparticles.html#a46db1788e16f6f838b5ecffdff24c709',1,'particles::rz()']]]
+];

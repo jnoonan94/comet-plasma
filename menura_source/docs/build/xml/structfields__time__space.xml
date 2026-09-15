@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structfields__time__space" kind="struct" language="C++" prot="public">
+    <compoundname>fields_time_space</compoundname>
+    <includes refid="structures_8h" local="no">structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfields__time__space_1a2f6961e4eeb07815433b72a531dc9fdb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float fields_time_space::E[3][len_save_t_cst][len_save_x_cst]</definition>
+        <argsstring>[3][len_save_t_cst][len_save_x_cst]</argsstring>
+        <name>E</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="242" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfields__time__space_1a52fd332eb5071a892ab296d1d5782934" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float fields_time_space::B[3][len_save_t_cst][len_save_x_cst]</definition>
+        <argsstring>[3][len_save_t_cst][len_save_x_cst]</argsstring>
+        <name>B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="243" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfields__time__space_1a2de395a18dc47ba2d3c9923c3b8fc0ba" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float fields_time_space::density[len_save_t_cst][len_save_x_cst]</definition>
+        <argsstring>[len_save_t_cst][len_save_x_cst]</argsstring>
+        <name>density</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="244" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="241" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="241" bodyend="245"/>
+    <listofallmembers>
+      <member refid="structfields__time__space_1a52fd332eb5071a892ab296d1d5782934" prot="public" virt="non-virtual"><scope>fields_time_space</scope><name>B</name></member>
+      <member refid="structfields__time__space_1a2de395a18dc47ba2d3c9923c3b8fc0ba" prot="public" virt="non-virtual"><scope>fields_time_space</scope><name>density</name></member>
+      <member refid="structfields__time__space_1a2f6961e4eeb07815433b72a531dc9fdb" prot="public" virt="non-virtual"><scope>fields_time_space</scope><name>E</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

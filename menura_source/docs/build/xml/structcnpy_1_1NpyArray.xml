@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structcnpy_1_1NpyArray" kind="struct" language="C++" prot="public">
+    <compoundname>cnpy::NpyArray</compoundname>
+    <includes refid="cnpy_8h" local="no">cnpy.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcnpy_1_1NpyArray_1a274276ea92cf0839ee14a292f4d0dc2f" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; std::vector&lt; char &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;std::vector&lt;char&gt; &gt; cnpy::NpyArray::data_holder</definition>
+        <argsstring></argsstring>
+        <name>data_holder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="56" column="25" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcnpy_1_1NpyArray_1a60dc8f8953d4b90d5a71a2af42f8de83" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>std::vector&lt;size_t&gt; cnpy::NpyArray::shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="57" column="21" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcnpy_1_1NpyArray_1ada76e18467c2e3d2c3100fdde6dce358" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t cnpy::NpyArray::word_size</definition>
+        <argsstring></argsstring>
+        <name>word_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="58" column="16" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcnpy_1_1NpyArray_1a073fe36f66efb1ef9229dafeac1c43c2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cnpy::NpyArray::fortran_order</definition>
+        <argsstring></argsstring>
+        <name>fortran_order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="59" column="14" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcnpy_1_1NpyArray_1a8eba9ba1c8987d9364312b579f3444b8" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t cnpy::NpyArray::num_vals</definition>
+        <argsstring></argsstring>
+        <name>num_vals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="60" column="16" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcnpy_1_1NpyArray_1a9660f15110b46ee3384505cb7819531c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cnpy::NpyArray::NpyArray</definition>
+        <argsstring>(const std::vector&lt; size_t &gt; &amp;_shape, size_t _word_size, bool _fortran_order)</argsstring>
+        <name>NpyArray</name>
+        <param>
+          <type>const std::vector&lt; size_t &gt; &amp;</type>
+          <declname>_shape</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_word_size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_fortran_order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="25" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="25" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="structcnpy_1_1NpyArray_1a22a4c264b18f3411bf739d91ffb4389f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cnpy::NpyArray::NpyArray</definition>
+        <argsstring>()</argsstring>
+        <name>NpyArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="34" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structcnpy_1_1NpyArray_1a367b7feaf166b62930cc6ce1c4426fc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* cnpy::NpyArray::data</definition>
+        <argsstring>()</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="37" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="structcnpy_1_1NpyArray_1a1622cd2863fb3f238c2b777a74d5a4e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const T *</type>
+        <definition>const T* cnpy::NpyArray::data</definition>
+        <argsstring>() const</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="42" column="17" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structcnpy_1_1NpyArray_1a4cf626dc18eec8b40fabd499253a069c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; cnpy::NpyArray::as_vec</definition>
+        <argsstring>() const</argsstring>
+        <name>as_vec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="47" column="21" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structcnpy_1_1NpyArray_1ae8004f74b07e6148d7342c2d063e12fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t cnpy::NpyArray::num_bytes</definition>
+        <argsstring>() const</argsstring>
+        <name>num_bytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="52" column="16" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="52" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="24" column="5" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="24" bodyend="61"/>
+    <listofallmembers>
+      <member refid="structcnpy_1_1NpyArray_1a4cf626dc18eec8b40fabd499253a069c" prot="public" virt="non-virtual"><scope>cnpy::NpyArray</scope><name>as_vec</name></member>
+      <member refid="structcnpy_1_1NpyArray_1a367b7feaf166b62930cc6ce1c4426fc4" prot="public" virt="non-virtual"><scope>cnpy::NpyArray</scope><name>data</name></member>
+      <member refid="structcnpy_1_1NpyArray_1a1622cd2863fb3f238c2b777a74d5a4e2" prot="public" virt="non-virtual"><scope>cnpy::NpyArray</scope><name>data</name></member>
+      <member refid="structcnpy_1_1NpyArray_1a274276ea92cf0839ee14a292f4d0dc2f" prot="public" virt="non-virtual"><scope>cnpy::NpyArray</scope><name>data_holder</name></member>
+      <member refid="structcnpy_1_1NpyArray_1a073fe36f66efb1ef9229dafeac1c43c2" prot="public" virt="non-virtual"><scope>cnpy::NpyArray</scope><name>fortran_order</name></member>
+      <member refid="structcnpy_1_1NpyArray_1a9660f15110b46ee3384505cb7819531c" prot="public" virt="non-virtual"><scope>cnpy::NpyArray</scope><name>NpyArray</name></member>
+      <member refid="structcnpy_1_1NpyArray_1a22a4c264b18f3411bf739d91ffb4389f" prot="public" virt="non-virtual"><scope>cnpy::NpyArray</scope><name>NpyArray</name></member>
+      <member refid="structcnpy_1_1NpyArray_1ae8004f74b07e6148d7342c2d063e12fc" prot="public" virt="non-virtual"><scope>cnpy::NpyArray</scope><name>num_bytes</name></member>
+      <member refid="structcnpy_1_1NpyArray_1a8eba9ba1c8987d9364312b579f3444b8" prot="public" virt="non-virtual"><scope>cnpy::NpyArray</scope><name>num_vals</name></member>
+      <member refid="structcnpy_1_1NpyArray_1a60dc8f8953d4b90d5a71a2af42f8de83" prot="public" virt="non-virtual"><scope>cnpy::NpyArray</scope><name>shape</name></member>
+      <member refid="structcnpy_1_1NpyArray_1ada76e18467c2e3d2c3100fdde6dce358" prot="public" virt="non-virtual"><scope>cnpy::NpyArray</scope><name>word_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

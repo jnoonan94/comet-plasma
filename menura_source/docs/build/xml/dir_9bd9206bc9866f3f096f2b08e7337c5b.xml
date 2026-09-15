@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_9bd9206bc9866f3f096f2b08e7337c5b" kind="dir">
+    <compoundname>/home/etienneb/Models/Menura/menura</compoundname>
+    <innerdir refid="dir_114acb279a4142100b8e5890917d16f7">/home/etienneb/Models/Menura/menura/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/"/>
+  </compounddef>
+</doxygen>

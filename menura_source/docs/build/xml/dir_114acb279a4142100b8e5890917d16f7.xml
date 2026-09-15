@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_114acb279a4142100b8e5890917d16f7" kind="dir">
+    <compoundname>/home/etienneb/Models/Menura/menura/src</compoundname>
+    <innerfile refid="cnpy_8cpp">cnpy.cpp</innerfile>
+    <innerfile refid="cnpy_8h">cnpy.h</innerfile>
+    <innerfile refid="functions__i_8cpp">functions_i.cpp</innerfile>
+    <innerfile refid="functions__i_8h">functions_i.h</innerfile>
+    <innerfile refid="functions__o_8cpp">functions_o.cpp</innerfile>
+    <innerfile refid="functions__o_8h">functions_o.h</innerfile>
+    <innerfile refid="kernels__calls_8h">kernels_calls.h</innerfile>
+    <innerfile refid="kernels__fields_8cuh">kernels_fields.cuh</innerfile>
+    <innerfile refid="kernels__HK_8cuh">kernels_HK.cuh</innerfile>
+    <innerfile refid="kernels__particles_8cuh">kernels_particles.cuh</innerfile>
+    <innerfile refid="kernels__particles__to__grid_8cuh">kernels_particles_to_grid.cuh</innerfile>
+    <innerfile refid="menura_8cu">menura.cu</innerfile>
+    <innerfile refid="output__parameters_8cpp">output_parameters.cpp</innerfile>
+    <innerfile refid="parameters_8h">parameters.h</innerfile>
+    <innerfile refid="structures_8h">structures.h</innerfile>
+    <innerfile refid="utils_8h">utils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/"/>
+  </compounddef>
+</doxygen>

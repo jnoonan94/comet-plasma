@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structhouse__keeping" kind="struct" language="C++" prot="public">
+    <compoundname>house_keeping</compoundname>
+    <includes refid="structures_8h" local="no">structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhouse__keeping_1a4ee4c432b872d21a11d0cfbd0d72b476" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int house_keeping::nbTruePart</definition>
+        <argsstring></argsstring>
+        <name>nbTruePart</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="267" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhouse__keeping_1a979dc0b3e5d0ba6a92ed62482686907d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int house_keeping::nbFreeIndTot</definition>
+        <argsstring></argsstring>
+        <name>nbFreeIndTot</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="268" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhouse__keeping_1a70de9d5a54800f3fa4ed2ced17cc5483" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int house_keeping::nbPartSW[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>nbPartSW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="269" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhouse__keeping_1a32584db7cb1aeb0db3232ce661e4f4a8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int house_keeping::nbPartPla[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>nbPartPla</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="270" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhouse__keeping_1ac9cf4b4247a643daa5df3352022bd519" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float house_keeping::simuTime[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>simuTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="271" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhouse__keeping_1acee5fa20286349e2e3c396744f52c003" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int house_keeping::runTime[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>runTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="272" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhouse__keeping_1a5616827df0384f15bf5894be6a18a55a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int house_keeping::nb_part_comm_up[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>nb_part_comm_up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="273" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhouse__keeping_1a136d017f89cf134a87068d25c2da7523" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int house_keeping::nb_part_comm_down[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>nb_part_comm_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="274" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhouse__keeping_1a41db8e0f0266cdedd2fad6ac234a469d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int house_keeping::nb_pla_proba[len_save_t_cst]</definition>
+        <argsstring>[len_save_t_cst]</argsstring>
+        <name>nb_pla_proba</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="275" column="7" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="266" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="266" bodyend="276"/>
+    <listofallmembers>
+      <member refid="structhouse__keeping_1a136d017f89cf134a87068d25c2da7523" prot="public" virt="non-virtual"><scope>house_keeping</scope><name>nb_part_comm_down</name></member>
+      <member refid="structhouse__keeping_1a5616827df0384f15bf5894be6a18a55a" prot="public" virt="non-virtual"><scope>house_keeping</scope><name>nb_part_comm_up</name></member>
+      <member refid="structhouse__keeping_1a41db8e0f0266cdedd2fad6ac234a469d" prot="public" virt="non-virtual"><scope>house_keeping</scope><name>nb_pla_proba</name></member>
+      <member refid="structhouse__keeping_1a979dc0b3e5d0ba6a92ed62482686907d" prot="public" virt="non-virtual"><scope>house_keeping</scope><name>nbFreeIndTot</name></member>
+      <member refid="structhouse__keeping_1a32584db7cb1aeb0db3232ce661e4f4a8" prot="public" virt="non-virtual"><scope>house_keeping</scope><name>nbPartPla</name></member>
+      <member refid="structhouse__keeping_1a70de9d5a54800f3fa4ed2ced17cc5483" prot="public" virt="non-virtual"><scope>house_keeping</scope><name>nbPartSW</name></member>
+      <member refid="structhouse__keeping_1a4ee4c432b872d21a11d0cfbd0d72b476" prot="public" virt="non-virtual"><scope>house_keeping</scope><name>nbTruePart</name></member>
+      <member refid="structhouse__keeping_1acee5fa20286349e2e3c396744f52c003" prot="public" virt="non-virtual"><scope>house_keeping</scope><name>runTime</name></member>
+      <member refid="structhouse__keeping_1ac9cf4b4247a643daa5df3352022bd519" prot="public" virt="non-virtual"><scope>house_keeping</scope><name>simuTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

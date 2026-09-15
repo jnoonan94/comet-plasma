@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structsimu__B__field" kind="struct" language="C++" prot="public">
+    <compoundname>simu_B_field</compoundname>
+    <includes refid="structures_8h" local="no">structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_B_field::B[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="124" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__B__field_1a7b6ff8ee9c9349d0cd4f04fd30a8f185" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_B_field::B_dip[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[3][len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>B_dip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="125" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="119" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="119" bodyend="127"/>
+    <listofallmembers>
+      <member refid="structsimu__B__field_1abc81e2f9f521387bd62b0d0c5ee65a1b" prot="public" virt="non-virtual"><scope>simu_B_field</scope><name>B</name></member>
+      <member refid="structsimu__B__field_1a7b6ff8ee9c9349d0cd4f04fd30a8f185" prot="public" virt="non-virtual"><scope>simu_B_field</scope><name>B_dip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH -A snic2021-22-24 # SNIC2020-5-290 # SNIC2021-22-24
+#SBATCH --job-name=go_leo     # Name of job
+#SBATCH --gres=gpu:k80:1,gpuexcl
+#SBATCH --ntasks=4 # Number of tasks.
+#SBATCH --ntasks-per-node=4 # number of MPI tasks per node (= number of GPUs per node)
+#SBATCH --exclusive
+#SBATCH --time=00:59:00              # maximum execution time requested (HH:MM:SS)
+#SBATCH --output=output_leo_multi_gpu_%j.out # name of output file
+#SBATCH --error=output_leo_multi_gpu_%j.out  # name of error file (here, in common with the output file)
+
+
+# echo of launched commands
+set -x
+
+# code execution
+srun leo

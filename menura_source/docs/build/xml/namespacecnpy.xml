@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacecnpy" kind="namespace" language="C++">
+    <compoundname>cnpy</compoundname>
+    <innerclass refid="structcnpy_1_1NpyArray" prot="public">cnpy::NpyArray</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacecnpy_1acfea2d25a7c0e41b79f04864b0a64a2b" prot="public" static="no">
+        <type>std::map&lt; std::string, <ref refid="structcnpy_1_1NpyArray" kindref="compound">NpyArray</ref> &gt;</type>
+        <definition>using cnpy::npz_t = typedef std::map&lt;std::string, NpyArray&gt;</definition>
+        <argsstring></argsstring>
+        <name>npz_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="63" column="5" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecnpy_1aa24638ba6b2f41429ee32e03295448cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char cnpy::BigEndianTest</definition>
+        <argsstring>()</argsstring>
+        <name>BigEndianTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="65" column="10" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.cpp" bodystart="15" bodyend="18" declfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" declline="65" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1a569c852a9455b0b0c2a6ffc358155127" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char cnpy::map_type</definition>
+        <argsstring>(const std::type_info &amp;t)</argsstring>
+        <name>map_type</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="66" column="10" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.cpp" bodystart="20" bodyend="45" declfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" declline="66" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1a9e4cd705ce96b2350ba17bfdf6f09a24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt; char &gt; cnpy::create_npy_header</definition>
+        <argsstring>(const std::vector&lt; size_t &gt; &amp;shape)</argsstring>
+        <name>create_npy_header</name>
+        <param>
+          <type>const std::vector&lt; size_t &gt; &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="235" column="28" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="235" bodyend="264" declfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" declline="67" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1adb801e369cfcf2e47c4b0348dcb54787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cnpy::parse_npy_header</definition>
+        <argsstring>(FILE *fp, size_t &amp;word_size, std::vector&lt; size_t &gt; &amp;shape, bool &amp;fortran_order)</argsstring>
+        <name>parse_npy_header</name>
+        <param>
+          <type>FILE *</type>
+          <declname>fp</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>word_size</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; size_t &gt; &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>fortran_order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="68" column="10" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.cpp" bodystart="104" bodyend="153" declfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" declline="68" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1a9ea9e228db8c205a039b7763c74829e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cnpy::parse_npy_header</definition>
+        <argsstring>(unsigned char *buffer, size_t &amp;word_size, std::vector&lt; size_t &gt; &amp;shape, bool &amp;fortran_order)</argsstring>
+        <name>parse_npy_header</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>word_size</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; size_t &gt; &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>fortran_order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="69" column="10" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.cpp" bodystart="62" bodyend="102" declfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" declline="69" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1a0feec097a7dbb48c449bc7e9b27b7fd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cnpy::parse_zip_footer</definition>
+        <argsstring>(FILE *fp, uint16_t &amp;nrecs, size_t &amp;global_header_size, size_t &amp;global_header_offset)</argsstring>
+        <name>parse_zip_footer</name>
+        <param>
+          <type>FILE *</type>
+          <declname>fp</declname>
+        </param>
+        <param>
+          <type>uint16_t &amp;</type>
+          <declname>nrecs</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>global_header_size</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>global_header_offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="70" column="10" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.cpp" bodystart="155" bodyend="176" declfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" declline="70" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1ab6ef932e48b81bddc5457ff4ceb44a3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacecnpy_1acfea2d25a7c0e41b79f04864b0a64a2b" kindref="member">npz_t</ref></type>
+        <definition>cnpy::npz_t cnpy::npz_load</definition>
+        <argsstring>(std::string fname)</argsstring>
+        <name>npz_load</name>
+        <param>
+          <type>std::string</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="71" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.cpp" bodystart="230" bodyend="277" declfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" declline="71" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1abfeb43960d51a799dbe718b3d73e8b52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcnpy_1_1NpyArray" kindref="compound">NpyArray</ref></type>
+        <definition>cnpy::NpyArray cnpy::npz_load</definition>
+        <argsstring>(std::string fname, std::string varname)</argsstring>
+        <name>npz_load</name>
+        <param>
+          <type>std::string</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>varname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="72" column="14" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.cpp" bodystart="279" bodyend="325" declfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" declline="72" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1abffb25587a54473fbe1d3c86fa4df4fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcnpy_1_1NpyArray" kindref="compound">NpyArray</ref></type>
+        <definition>cnpy::NpyArray cnpy::npy_load</definition>
+        <argsstring>(std::string fname)</argsstring>
+        <name>npy_load</name>
+        <param>
+          <type>std::string</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="73" column="14" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.cpp" bodystart="327" bodyend="337" declfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" declline="73" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1ac8daa2ff90ad9f02b13e8a6f6b88bca6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; char &gt; &amp;</type>
+        <definition>std::vector&lt;char&gt;&amp; cnpy::operator+=</definition>
+        <argsstring>(std::vector&lt; char &gt; &amp;lhs, const T rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>std::vector&lt; char &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="75" column="28" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="75" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1a357cd39fe2f4327eb08495b48544d47e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::vector&lt; char &gt; &amp;</type>
+        <definition>std::vector&lt; char &gt; &amp; cnpy::operator+=</definition>
+        <argsstring>(std::vector&lt; char &gt; &amp;lhs, const std::string rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>std::vector&lt; char &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="84" column="27" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.cpp" bodystart="47" bodyend="50" declfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" declline="84" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1adde4f7c4e52778f1e28effe4ae80bef3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::vector&lt; char &gt; &amp;</type>
+        <definition>std::vector&lt; char &gt; &amp; cnpy::operator+=</definition>
+        <argsstring>(std::vector&lt; char &gt; &amp;lhs, const char *rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>std::vector&lt; char &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="85" column="27" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.cpp" bodystart="52" bodyend="60" declfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" declline="85" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1abd95249bf67216d36416294df339fb47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cnpy::npy_save</definition>
+        <argsstring>(std::string fname, const T *data, const std::vector&lt; size_t &gt; shape, std::string mode=&quot;w&quot;)</argsstring>
+        <name>npy_save</name>
+        <param>
+          <type>std::string</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; size_t &gt;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>mode</declname>
+          <defval>&quot;w&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="88" column="21" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="88" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1acdeed7370a9ddc23ce3b66534e039a1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cnpy::npz_save</definition>
+        <argsstring>(std::string zipname, std::string fname, const T *data, const std::vector&lt; size_t &gt; &amp;shape, std::string mode=&quot;w&quot;)</argsstring>
+        <name>npz_save</name>
+        <param>
+          <type>std::string</type>
+          <declname>zipname</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; size_t &gt; &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>mode</declname>
+          <defval>&quot;w&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="133" column="21" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="133" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1a9311beeca7e441c777c78fc80be40649" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cnpy::npy_save</definition>
+        <argsstring>(std::string fname, const std::vector&lt; T &gt; data, std::string mode=&quot;w&quot;)</argsstring>
+        <name>npy_save</name>
+        <param>
+          <type>std::string</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T &gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>mode</declname>
+          <defval>&quot;w&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="223" column="21" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="223" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecnpy_1a7161744ba1c204fea5c5e15b177a311f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cnpy::npz_save</definition>
+        <argsstring>(std::string zipname, std::string fname, const std::vector&lt; T &gt; data, std::string mode=&quot;w&quot;)</argsstring>
+        <name>npz_save</name>
+        <param>
+          <type>std::string</type>
+          <declname>zipname</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T &gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>mode</declname>
+          <defval>&quot;w&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="229" column="21" bodyfile="/home/etienneb/Models/Menura/menura/src/cnpy.h" bodystart="229" bodyend="233"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/cnpy.h" line="22" column="1"/>
+  </compounddef>
+</doxygen>

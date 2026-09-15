@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structparticles" kind="struct" language="C++" prot="public">
+    <compoundname>particles</compoundname>
+    <includes refid="structures_8h" local="no">structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structparticles_1ac564bf44942c3296b0bb765d9c9a545d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float particles::rx[pool_size_cst]</definition>
+        <argsstring>[pool_size_cst]</argsstring>
+        <name>rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="130" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparticles_1aba286af18690d67c641f20b0622fae97" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float particles::ry[pool_size_cst]</definition>
+        <argsstring>[pool_size_cst]</argsstring>
+        <name>ry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="131" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparticles_1a46db1788e16f6f838b5ecffdff24c709" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float particles::rz[pool_size_cst]</definition>
+        <argsstring>[pool_size_cst]</argsstring>
+        <name>rz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="133" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparticles_1a349ed5b2638968e01eb2cb2d3c24bd96" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float particles::vx[pool_size_cst]</definition>
+        <argsstring>[pool_size_cst]</argsstring>
+        <name>vx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="135" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparticles_1a54bd02cf71b64191abf44a39dca5a059" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float particles::vy[pool_size_cst]</definition>
+        <argsstring>[pool_size_cst]</argsstring>
+        <name>vy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="136" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparticles_1a5f5040f755627ae27677c0ea102839b7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float particles::vz[pool_size_cst]</definition>
+        <argsstring>[pool_size_cst]</argsstring>
+        <name>vz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="137" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparticles_1ab750e0f48cf50d114f9647488b46afb0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool particles::active[pool_size_cst]</definition>
+        <argsstring>[pool_size_cst]</argsstring>
+        <name>active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="138" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparticles_1aa099d5598cef99211ac2dd906dd2c748" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int particles::ID[pool_size_cst]</definition>
+        <argsstring>[pool_size_cst]</argsstring>
+        <name>ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="139" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="129" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="129" bodyend="140"/>
+    <listofallmembers>
+      <member refid="structparticles_1ab750e0f48cf50d114f9647488b46afb0" prot="public" virt="non-virtual"><scope>particles</scope><name>active</name></member>
+      <member refid="structparticles_1aa099d5598cef99211ac2dd906dd2c748" prot="public" virt="non-virtual"><scope>particles</scope><name>ID</name></member>
+      <member refid="structparticles_1ac564bf44942c3296b0bb765d9c9a545d" prot="public" virt="non-virtual"><scope>particles</scope><name>rx</name></member>
+      <member refid="structparticles_1aba286af18690d67c641f20b0622fae97" prot="public" virt="non-virtual"><scope>particles</scope><name>ry</name></member>
+      <member refid="structparticles_1a46db1788e16f6f838b5ecffdff24c709" prot="public" virt="non-virtual"><scope>particles</scope><name>rz</name></member>
+      <member refid="structparticles_1a349ed5b2638968e01eb2cb2d3c24bd96" prot="public" virt="non-virtual"><scope>particles</scope><name>vx</name></member>
+      <member refid="structparticles_1a54bd02cf71b64191abf44a39dca5a059" prot="public" virt="non-virtual"><scope>particles</scope><name>vy</name></member>
+      <member refid="structparticles_1a5f5040f755627ae27677c0ea102839b7" prot="public" virt="non-virtual"><scope>particles</scope><name>vz</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

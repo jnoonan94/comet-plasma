@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structsimu__grid" kind="struct" language="C++" prot="public">
+    <compoundname>simu_grid</compoundname>
+    <includes refid="structures_8h" local="no">structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsimu__grid_1a4bf94154385a2ed8544d28d3aab38add" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::xGrid[len_x_cst+4]</definition>
+        <argsstring>[len_x_cst+4]</argsstring>
+        <name>xGrid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="41" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__grid_1a68b177dbf66286ca4bb557618731592d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::yGrid[len_y_cst+4]</definition>
+        <argsstring>[len_y_cst+4]</argsstring>
+        <name>yGrid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="42" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__grid_1a3222dcf9f23facb052b46fbf13b30784" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::xMin</definition>
+        <argsstring></argsstring>
+        <name>xMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="43" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__grid_1a2fd344724e5bd242f26b725b39138e23" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::xMax</definition>
+        <argsstring></argsstring>
+        <name>xMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="43" column="21" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__grid_1a43e6b45232e556dbc256b4185d6ae922" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::yMin</definition>
+        <argsstring></argsstring>
+        <name>yMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="44" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__grid_1a2020ac49fc417a0acc5146329e1f8b50" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::yMax</definition>
+        <argsstring></argsstring>
+        <name>yMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="44" column="21" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__grid_1ac17e1f698e314287e4d0b81dcb2b86ff" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::centre_x</definition>
+        <argsstring></argsstring>
+        <name>centre_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="45" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__grid_1a6f57410b86326e0d126e5163210ba109" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::centre_y</definition>
+        <argsstring></argsstring>
+        <name>centre_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="46" column="9" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__grid_1a16cdf4aff4f4ecb5e95b3e0fe62c8020" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::zGrid[len_z_cst+4]</definition>
+        <argsstring>[len_z_cst+4]</argsstring>
+        <name>zGrid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="48" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__grid_1a5c041abe229439c3a4fc8c4b6bf144d6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::zMin</definition>
+        <argsstring></argsstring>
+        <name>zMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="49" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__grid_1a5e88ffb9c91c70241a8e0ada1fc26a48" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::zMax</definition>
+        <argsstring></argsstring>
+        <name>zMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="49" column="23" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__grid_1a55554f3ca0c7d51b3d8b510a039fff82" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::centre_z</definition>
+        <argsstring></argsstring>
+        <name>centre_z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="50" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsimu__grid_1a58adcea053a336d8bd31895ec0ab522f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simu_grid::rsq[len_x_cst+4][len_y_cst+4][len_z_cst+4]</definition>
+        <argsstring>[len_x_cst+4][len_y_cst+4][len_z_cst+4]</argsstring>
+        <name>rsq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="56" column="11" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/etienneb/Models/Menura/menura/src/structures.h" line="40" column="1" bodyfile="/home/etienneb/Models/Menura/menura/src/structures.h" bodystart="40" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structsimu__grid_1ac17e1f698e314287e4d0b81dcb2b86ff" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>centre_x</name></member>
+      <member refid="structsimu__grid_1a6f57410b86326e0d126e5163210ba109" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>centre_y</name></member>
+      <member refid="structsimu__grid_1a55554f3ca0c7d51b3d8b510a039fff82" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>centre_z</name></member>
+      <member refid="structsimu__grid_1a58adcea053a336d8bd31895ec0ab522f" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>rsq</name></member>
+      <member refid="structsimu__grid_1a4bf94154385a2ed8544d28d3aab38add" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>xGrid</name></member>
+      <member refid="structsimu__grid_1a2fd344724e5bd242f26b725b39138e23" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>xMax</name></member>
+      <member refid="structsimu__grid_1a3222dcf9f23facb052b46fbf13b30784" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>xMin</name></member>
+      <member refid="structsimu__grid_1a68b177dbf66286ca4bb557618731592d" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>yGrid</name></member>
+      <member refid="structsimu__grid_1a2020ac49fc417a0acc5146329e1f8b50" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>yMax</name></member>
+      <member refid="structsimu__grid_1a43e6b45232e556dbc256b4185d6ae922" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>yMin</name></member>
+      <member refid="structsimu__grid_1a16cdf4aff4f4ecb5e95b3e0fe62c8020" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>zGrid</name></member>
+      <member refid="structsimu__grid_1a5e88ffb9c91c70241a8e0ada1fc26a48" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>zMax</name></member>
+      <member refid="structsimu__grid_1a5c041abe229439c3a4fc8c4b6bf144d6" prot="public" virt="non-virtual"><scope>simu_grid</scope><name>zMin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

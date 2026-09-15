@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['add_5fbuff_5fdown_5fk_435',['add_buff_down_k',['../kernels__fields_8cuh.html#a5022ca223513a837e5146363b669ddc2',1,'kernels_fields.cuh']]],
+  ['add_5fcopy_5fguard_5fcells_5fscalar_436',['add_copy_guard_cells_scalar',['../kernels__calls_8h.html#a06f3bb516fd088de30049117661d0ed4',1,'kernels_calls.h']]],
+  ['add_5fcopy_5fguard_5fcells_5fvector_437',['add_copy_guard_cells_vector',['../kernels__calls_8h.html#a37b1c0f02805982d201edbbd14e66d77',1,'kernels_calls.h']]],
+  ['add_5fcopy_5fguard_5fx_5fk_438',['add_copy_guard_X_k',['../kernels__fields_8cuh.html#af35a060c1919feacefb58c7113080c9a',1,'kernels_fields.cuh']]],
+  ['add_5fcopy_5fguard_5fy_5fk_439',['add_copy_guard_Y_k',['../kernels__fields_8cuh.html#ada692af0437dd08ad7030ca69411dcd7',1,'kernels_fields.cuh']]],
+  ['add_5fcopy_5fguard_5fz_5fk_440',['add_copy_guard_Z_k',['../kernels__fields_8cuh.html#af29b82696fc9dc556d32590a686b8dd0',1,'kernels_fields.cuh']]],
+  ['add_5fcounts_5fb_5fk_441',['add_counts_b_k',['../kernels__fields_8cuh.html#ac81063c475935a758caf0abedd74c109',1,'kernels_fields.cuh']]],
+  ['add_5fcounts_5fk_442',['add_counts_k',['../kernels__fields_8cuh.html#a5ab95a7d3c28006d3f15e0440c4c0820',1,'kernels_fields.cuh']]],
+  ['add_5fcurr_5fb_5fk_443',['add_curr_b_k',['../kernels__fields_8cuh.html#a4322777bafbd754523431f6c6ef974a9',1,'kernels_fields.cuh']]],
+  ['add_5fcurr_5fk_444',['add_curr_k',['../kernels__fields_8cuh.html#a3c79dd08e550c5227933605f18274d7e',1,'kernels_fields.cuh']]],
+  ['add_5fpart_5fcom_5fnode_5fk_445',['add_part_com_node_k',['../kernels__particles_8cuh.html#ad4df8133d42d75b3d1b920b7a728edf9',1,'kernels_particles.cuh']]],
+  ['add_5fpart_5fsw_5fnode_5fk_446',['add_part_SW_node_k',['../kernels__particles_8cuh.html#a3336633940daa04dca2acc565cdda2e6',1,'kernels_particles.cuh']]],
+  ['add_5fproba_5fcom_5fk_447',['add_proba_com_k',['../kernels__particles_8cuh.html#a7bc71fcfe7c34db0c8f4549548465087',1,'kernels_particles.cuh']]],
+  ['addfluctuations_448',['addFluctuations',['../functions__i_8h.html#af692accc4272d7f5edc8bcc3ed686e19',1,'functions_i.h']]],
+  ['as_5fvec_449',['as_vec',['../structcnpy_1_1NpyArray.html#a4cf626dc18eec8b40fabd499253a069c',1,'cnpy::NpyArray']]],
+  ['average_5fmoments_5fk_450',['average_moments_k',['../kernels__fields_8cuh.html#a1471d01653f5793c289591d674ef8e88',1,'kernels_fields.cuh']]]
+];
