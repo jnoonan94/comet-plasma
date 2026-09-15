@@ -83,7 +83,7 @@ git clone <URL> [optional-folder-name]
 
 ---
 
-## Step 5 — Clone the `comet_plasma` Repository
+## Step 5 — Clone the `comet-plasma` Repository
 
 ### If the repo is hosted on GitHub:
 
@@ -94,10 +94,10 @@ Navigate to where you want to store the project, then clone it:
 cd ~/Projects
 
 # Clone the repo
-git clone https://github.com/<username>/comet_plasma.git
+git clone https://github.com/<username>/comet-plasma.git
 ```
 
-Replace `<username>` with the GitHub username or organization that hosts the repo. Git will create a new folder called `comet_plasma/` and download everything into it.
+Replace `<username>` with the GitHub username or organization that hosts the repo. Git will create a new folder called `comet-plasma/` and download everything into it.
 
 ### If you are cloning the Menura source from Zenodo:
 
@@ -106,7 +106,7 @@ The Menura v1 source is archived at: https://zenodo.org/records/6517018
 Download the source archive from that page (Zenodo does not support direct `git clone`, so you'll download a `.zip` or `.tar.gz`). Then unzip it into your project folder:
 
 ```bash
-cd ~/Projects/comet_plasma
+cd ~/Projects/comet-plasma
 unzip menura-v1.zip -d menura_source/
 ```
 
@@ -117,7 +117,7 @@ unzip menura-v1.zip -d menura_source/
 Once cloned, move into the folder:
 
 ```bash
-cd comet_plasma
+cd comet-plasma
 ```
 
 List its contents to get oriented:
@@ -142,7 +142,7 @@ If the remote repository gets updated (e.g., new tutorials or fixes are pushed),
 
 ```bash
 # Make sure you're inside the repo folder
-cd ~/Projects/comet_plasma
+cd ~/Projects/comet-plasma
 
 # Fetch and merge any new changes
 git pull
@@ -175,7 +175,7 @@ This means GitHub requires SSH authentication instead of HTTPS. Either:
 **"fatal: destination path already exists"**
 A folder with that name already exists. Either delete it or clone into a different directory:
 ```bash
-git clone <URL> comet_plasma_new
+git clone <URL> comet-plasma-new
 ```
 
 **"not a git repository"**
