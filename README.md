@@ -3,6 +3,8 @@
 Research project investigating cometary plasma environments using the
 [Menura](https://zenodo.org/records/6517018) 3-D hybrid PIC simulation code.
 
+Undergraduate Researcher for the project is Daniel Vallejo Garcia
+
 ## Folder layout
 
 ```
