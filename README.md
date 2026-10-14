@@ -22,7 +22,11 @@ comet_plasma_modeling/
     ├── README.md           Tutorial index and quick-start recipe
     ├── A_cpp_basics/       C++ and CUDA background (5 guides)
     ├── B_menura_guide/     Installation, configuration, running, analysis (5 guides)
-    └── C_notebooks/        Working analysis notebooks (3 Jupyter notebooks)
+    ├── C_notebooks/        Working analysis notebooks (3 Jupyter notebooks)
+    ├── PLASMA_MODEL_STYLES.md  Overview of the fluid / hybrid / fully kinetic tutorials
+    ├── D_fluid_models/     Fluid & MHD comet plasma models (1 notebook)
+    ├── E_hybrid_models/    Hybrid PIC comet plasma models (1 notebook)
+    └── F_fully_kinetic_models/  Fully kinetic PIC comet plasma models (1 notebook)
 ```
 
 ## Quick start

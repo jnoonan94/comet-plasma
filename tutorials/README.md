@@ -60,6 +60,16 @@ Working Python notebooks for common analysis tasks.
 | `C_notebooks/02_house_keeping_diagnostics.ipynb` | Energy evolution, particle counts, B statistics, throughput |
 | `C_notebooks/03_particle_data_and_distributions.ipynb` | Particle positions, 1-D and 2-D VDFs, shell analysis |
 
+
+### Parts D–F: Plasma model styles in comet science
+Self-contained notebooks, one per model family in Goetz et al. (2022, Space Sci. Rev. 218:65, Sect. 3.3 / Table 5). Each builds a toy model from scratch and validates it. See `PLASMA_MODEL_STYLES.md` for the overview.
+
+| File | Topic |
+|------|-------|
+| `D_fluid_models/D1_fluid_mass_loaded_MHD.ipynb` | Fluid/MHD: inner-coma ion continuity; 1-D mass-loaded MHD and the critical mass loading |
+| `E_hybrid_models/E1_hybrid_PIC_weak_comet.ipynb` | Hybrid: 2-D hybrid PIC of a weak comet (pickup ions, solar-wind deflection); maps onto Menura kernels |
+| `F_fully_kinetic_models/F1_fully_kinetic_PIC_ambipolar.ipynb` | Fully kinetic: 1-D electrostatic PIC of the ambipolar potential around an ionising coma |
+
 ---
 
 ## Quick-start recipe
